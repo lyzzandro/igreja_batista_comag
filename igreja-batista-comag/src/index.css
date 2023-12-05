@@ -7,12 +7,20 @@
 }
 
 a {
+  padding: 33px 16px;
   text-decoration: none;
   color: var(--grey-800);
+  border-bottom: 2px none var(--yellow-400);
+  transition: border 200ms ease-in-out;
+  -webkit-transition: border 200ms ease-in-out;
+  -moz-transition: border 200ms ease-in-out;
+  -ms-transition: border 200ms ease-in-out;
+  -o-transition: border 200ms ease-in-out;
 }
 
 a:hover {
   color: none;
+  border-bottom: 2px solid var(--yellow-400);
 }
 
 :root {

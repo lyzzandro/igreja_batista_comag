@@ -40,7 +40,13 @@
 }
 
 @media (max-width: 700px) {
-  .capas-youtube img{
+  .capas-youtube a {
     width: 100%;
+  }
+  .capas-youtube img {
+    width: 100%;
+  }
+  .header-cultos {
+    text-align: center;
   }
 }

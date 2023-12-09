@@ -111,3 +111,12 @@ li {
   width: 1216px;
   gap: 48px;
 }
+
+@media (max-width: 1216px) {
+  .container{
+    padding: 0px 20px;
+  }
+  h2{
+    width: 100%;
+  }
+}

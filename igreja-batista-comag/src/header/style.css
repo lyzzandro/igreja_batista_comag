@@ -16,3 +16,9 @@ ul {
   display: flex;
   list-style: none;
 }
+
+@media (max-width: 1024px) {
+  ul {
+    display: none;
+  }
+}

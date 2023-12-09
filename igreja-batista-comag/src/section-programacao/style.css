@@ -13,6 +13,10 @@
   gap: 16px;
 }
 
+.header-programacao p {
+  text-align: center;
+}
+
 .section-programacao .container {
   flex-direction: column;
 }
@@ -23,6 +27,7 @@
 
 .horarios {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   width: 100%;
 }
@@ -46,6 +51,7 @@
 .info {
   display: flex;
   height: 100%;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
   padding: 24px 16px;
@@ -60,8 +66,8 @@
 
 .horario {
   border-radius: 8px;
-  width: 100%;
   display: flex;
+  flex:1 1 auto;
   flex-direction: column;
   background-color: var(--white-400);
   -webkit-border-radius: 8px;

@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./header";
+import SectionDizimos from "./section-dizimos";
 import SectionHero from "./section-hero";
-import SectionProgramacao from './section-programacao';
+import SectionProgramacao from "./section-programacao";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header></Header>
       <SectionHero></SectionHero>
       <SectionProgramacao></SectionProgramacao>
+      <SectionDizimos></SectionDizimos>
     </>
   );
 }

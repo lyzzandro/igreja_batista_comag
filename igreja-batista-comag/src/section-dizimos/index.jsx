@@ -14,7 +14,7 @@ function SectionDizimos() {
             </p>
           </div>
           <button className="button-outline">
-            Veja todas as forma de colaborar
+            Veja todas as formas de colaborar
           </button>
         </div>
         <img src={dizimos} alt="Imagem dizimos e ofertas" />

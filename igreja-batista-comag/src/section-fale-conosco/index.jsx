@@ -19,7 +19,7 @@ function SectionFaleConosco() {
             </label>
             <input
               type="text"
-              placeholder="Ex: joaogomes@gmail.com"
+              placeholder="Ex: Lucas Silva"
               id="nome"
               name="name"
               required
@@ -32,7 +32,7 @@ function SectionFaleConosco() {
             </label>
             <input
               type="text"
-              placeholder="Ex: joaogomes@gmail.com"
+              placeholder="Ex: lucas@gmail.com"
               id="email"
               name="email"
               required
@@ -44,7 +44,7 @@ function SectionFaleConosco() {
               <img src={message} alt="SVG de uma mensagem" /> Mensagem
             </label>
             <textarea
-              placeholder="Ex: joaogomes@gmail.com"
+              placeholder="Escreva sua mensagem"
               id="mensagem"
               name="message"
               required

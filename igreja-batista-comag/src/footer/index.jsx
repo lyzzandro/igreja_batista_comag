@@ -1,4 +1,9 @@
 import "./style.css";
+import logo from "../../public/logo.png";
+import email from "../../public/Email icon.svg";
+import instagram from "../../public/IG icon.svg";
+import facebook from "../../public/Facebook icon.svg";
+import youtube from "../../public/Youtube icon.svg";
 
 function SectionFooter() {
   return (
@@ -55,7 +60,33 @@ function SectionFooter() {
           </div>
         </div>
         <div className="infos">
-          
+          <div>
+            <a href="#" className="link-logos">
+              <img src={logo} alt="Logo igreja" />
+            </a>
+
+            <div>
+              <p className="link-site">ibcomag.com.br</p>
+              <p className="info-site">
+                Copyright © 2022 Igreja Batista Comunidade André Gadelha
+              </p>
+              <p className="info-site">Todos os direitos reservados</p>
+            </div>
+          </div>
+          <div className="social-media">
+            <a href="#" className="link-logos">
+              <img src={email} alt="Logo email" />
+            </a>
+            <a href="#" className="link-logos">
+              <img src={instagram} alt="Logo instagram" />
+            </a>
+            <a href="#" className="link-logos">
+              <img src={facebook} alt="Logo facebook" />
+            </a>
+            <a href="#" className="link-logos">
+              <img src={youtube} alt="Logo youtube" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

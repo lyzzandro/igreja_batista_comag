@@ -1,9 +1,11 @@
 import "./App.css";
+import SectionFooter from "./footer";
 import Header from "./header";
 import SectionCultos from "./section-cultos";
 import SectionDizimos from "./section-dizimos";
 import SectionFaleConosco from "./section-fale-conosco";
 import SectionHero from "./section-hero";
+import SectionLocalizacao from "./section-localizacao";
 import SectionProgramacao from "./section-programacao";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <SectionDizimos></SectionDizimos>
       <SectionCultos></SectionCultos>
       <SectionFaleConosco></SectionFaleConosco>
+      <SectionLocalizacao></SectionLocalizacao>
+      <SectionFooter></SectionFooter>
     </>
   );
 }

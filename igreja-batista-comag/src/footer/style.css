@@ -37,6 +37,8 @@
   justify-content: space-between;
   padding-bottom: 48px;
   border-bottom: 1px solid var(--blue-400);
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .title-links {
@@ -51,12 +53,14 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .infos > div {
   display: flex;
-  width: 100%;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .link-site {
@@ -97,4 +101,24 @@
 
 .link-logos img:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 599px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .infos > div {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link-site,
+  .info-site {
+    text-align: center;
+  }
 }

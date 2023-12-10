@@ -12,7 +12,7 @@ function SectionFaleConosco() {
           <p>Envie sua mensagem para nós.</p>
         </div>
 
-        <form action="">
+        <form action="https://formsubmit.co/ibcomag@gmail.com" method="POST">
           <div className="campos">
             <label htmlFor="nome">
               <img src={person} alt="SVG de uma pessoa" /> Nome
@@ -21,6 +21,8 @@ function SectionFaleConosco() {
               type="text"
               placeholder="Ex: joaogomes@gmail.com"
               id="nome"
+              name="name"
+              required
             />
           </div>
 
@@ -32,6 +34,8 @@ function SectionFaleConosco() {
               type="text"
               placeholder="Ex: joaogomes@gmail.com"
               id="email"
+              name="email"
+              required
             />
           </div>
 
@@ -42,11 +46,14 @@ function SectionFaleConosco() {
             <textarea
               placeholder="Ex: joaogomes@gmail.com"
               id="mensagem"
+              name="message"
+              required
             ></textarea>
           </div>
+          <button className="button-fill" type="submit">
+            Enviar mensagem
+          </button>
         </form>
-
-        <button className="button-fill">Enviar mensagem</button>
       </div>
     </div>
   );

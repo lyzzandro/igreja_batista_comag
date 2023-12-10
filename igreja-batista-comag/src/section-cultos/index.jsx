@@ -16,21 +16,32 @@ function SectionCultos() {
           </p>
         </div>
         <div className="capas-youtube">
-          <a href="https://www.youtube.com/watch?v=e9KZp37xJtM&t=1047s">
+          <a
+            href="https://www.youtube.com/watch?v=e9KZp37xJtM&t=1047s"
+            target="__blank"
+          >
             <img src={video1} alt="Capa do vídeo youtube" />
           </a>
-          <a href="https://www.youtube.com/watch?v=WzmzUXyZDy0&t=820s">
+          <a
+            href="https://www.youtube.com/watch?v=WzmzUXyZDy0&t=820s"
+            target="__blank"
+          >
             <img src={video2} alt="Capa do vídeo youtube" />
           </a>
-          <a href="https://www.youtube.com/watch?v=XOMIHSBLrAI&t=60s">
+          <a
+            href="https://www.youtube.com/watch?v=XOMIHSBLrAI&t=60s"
+            target="__blank"
+          >
             <img src={video3} alt="Capa do vídeo youtube" />
           </a>
         </div>
 
-        <button className="button-fill youtube">
-          <img src={youtube} alt="Logomarca do youtube" />
-          Nosso canal no YouTube
-        </button>
+        <a href="https://ibcomag.page.link/youtube" target="__blank">
+          <button className="button-fill youtube">
+            <img src={youtube} alt="Logo do youtube" />
+            Nosso canal no YouTube
+          </button>
+        </a>
       </div>
     </div>
   );

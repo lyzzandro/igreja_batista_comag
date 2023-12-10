@@ -9,22 +9,34 @@ function Header() {
           <img src={logo} alt="Logo da igreja" />
           <ul>
             <li>
-              <a href="#">Início</a>
+              <a href="#" className="links-header">
+                Início
+              </a>
             </li>
             <li>
-              <a href="#">Programação</a>
+              <a href="#" className="links-header">
+                Programação
+              </a>
             </li>
             <li>
-              <a href="#">Dízimos e Ofertas</a>
+              <a href="#" className="links-header">
+                Dízimos e Ofertas
+              </a>
             </li>
             <li>
-              <a href="#">Cultos Gravados</a>
+              <a href="#" className="links-header">
+                Cultos Gravados
+              </a>
             </li>
             <li>
-              <a href="#">Fale Conosco</a>
+              <a href="#" className="links-header">
+                Fale Conosco
+              </a>
             </li>
             <li>
-              <a href="#">Localização</a>
+              <a href="#" className="links-header">
+                Localização
+              </a>
             </li>
           </ul>
         </header>

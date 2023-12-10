@@ -1,5 +1,5 @@
 import "./style.css";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo2.png";
 import email from "../../public/Email icon.svg";
 import instagram from "../../public/IG icon.svg";
 import facebook from "../../public/Facebook icon.svg";
@@ -15,23 +15,23 @@ function SectionFooter() {
             <a
               href="mailto:ibcomag@gmail.com"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>ibcomag@gmail.com</p>
+              ibcomag@gmail.com
             </a>
             <a
               href="https://web.whatsapp.com/send?phone=5583991940303"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>+55 (83) 99194-0303</p>
+              +55 (83) 99194-0303
             </a>
             <a
               href="https://web.whatsapp.com/send?phone=5583991607575"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>+55 (83) 99160-7575</p>
+              +55 (83) 99160-7575
             </a>
           </div>
           <div className="col-links">
@@ -39,23 +39,23 @@ function SectionFooter() {
             <a
               href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Rua Adilmar de Paiva Gadelha, 01</p>
+              Rua Adilmar de Paiva Gadelha, 01
             </a>
             <a
               href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Bairro André Gadelha</p>
+              Bairro André Gadelha
             </a>
             <a
               href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Sousa, PB</p>
+              Sousa, PB
             </a>
           </div>
           <div className="col-links">
@@ -63,35 +63,35 @@ function SectionFooter() {
             <a
               href="https://ibcomag.page.link/instagram"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Instagram</p>
+              Instagram
             </a>
             <a
               href="https://ibcomag.page.link/youtube"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Youtube</p>
+              Youtube
             </a>
             <a
               href="https://www.facebook.com/ibcomag"
               target="__blank"
-              className="link"
+              className="link-footer"
             >
-              <p>Facebook</p>
+              Facebook
             </a>
           </div>
           <div className="col-links">
             <p className="title-links">Sobre</p>
-            <a href="" className="link">
-              <p>Nossa História</p>
+            <a href="" className="link-footer">
+              Nossa História
             </a>
-            <a href="" className="link">
-              <p>Liderança</p>
+            <a href="" className="link-footer">
+              Liderança
             </a>
-            <a href="" className="link">
-              <p>Ministérios</p>
+            <a href="" className="link-footer">
+              Ministérios
             </a>
           </div>
         </div>

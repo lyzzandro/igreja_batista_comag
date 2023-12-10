@@ -6,7 +6,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Links INICIO*/
+
 a {
+  text-decoration: none;
+}
+
+.links-header {
   padding: 33px 16px;
   text-decoration: none;
   color: var(--grey-800);
@@ -18,10 +24,27 @@ a {
   -o-transition: all 300ms ease-in-out;
 }
 
-a:hover {
+.links-header:hover {
   color: none;
   border-bottom: 2px solid var(--yellow-400);
 }
+
+.link-footer {
+  color: var(--white-600);
+  line-height: 150%;
+  text-decoration: none;
+  transition: 200ms all ease-in-out;
+  -webkit-transition: 200ms all ease-in-out;
+  -moz-transition: 200ms all ease-in-out;
+  -ms-transition: 200ms all ease-in-out;
+  -o-transition: 200ms all ease-in-out;
+}
+
+.link-footer:hover {
+  color: var(--white-700);
+}
+
+/* Links FIM */
 
 :root {
   /* White */

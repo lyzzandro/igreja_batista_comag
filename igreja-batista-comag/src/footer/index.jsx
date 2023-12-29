@@ -1,9 +1,9 @@
 import "./style.css";
-import logo from "../../public/logo2.png";
-import email from "../../public/Email icon.svg";
-import instagram from "../../public/IG icon.svg";
-import facebook from "../../public/Facebook icon.svg";
-import youtube from "../../public/Youtube icon.svg";
+import logo from "/logo2.png";
+import email from "/Email icon.svg";
+import instagram from "/IG icon.svg";
+import facebook from "/Facebook icon.svg";
+import youtube from "/Youtube icon.svg";
 
 function SectionFooter() {
   return (

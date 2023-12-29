@@ -12,13 +12,57 @@ header {
   padding: 12px 0;
 }
 
+header button {
+  border: none;
+  background-color: transparent;
+  display: none;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
 ul {
   display: flex;
   list-style: none;
 }
 
+.menu {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 84px;
+  width: 312px;
+  height: 100%;
+  background-color: var(--blue-600);
+}
+
+.menu ul {
+  display: flex;
+  padding: 24px 0;
+  gap: 4px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu ul li {
+  padding: 12px 24px;
+  color: var(--white-50);
+  width: 100%;
+}
+
+.menu ul li:hover {
+  background-color: var(--yellow-600);
+  color: var(--white-50);
+}
+
 @media (max-width: 1024px) {
   ul {
     display: none;
+  }
+  header button {
+    display: flex;
+    width: fit-content;
   }
 }

@@ -1,5 +1,5 @@
 import "./style.css";
-import dizimos from "../../public/bg-dizimos.jpg";
+import dizimos from "/bg-dizimos.jpg";
 
 function SectionDizimos() {
   return (

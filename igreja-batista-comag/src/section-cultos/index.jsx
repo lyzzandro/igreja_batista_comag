@@ -1,8 +1,8 @@
 import "./style.css";
-import video1 from "../../public/video1.jpg";
-import video2 from "../../public/video2.jpg";
-import video3 from "../../public/video3.jpg";
-import youtube from "../../public/youtube.svg";
+import video1 from "/video1.jpg";
+import video2 from "/video2.jpg";
+import video3 from "/video3.jpg";
+import youtube from "/youtube.svg";
 
 function SectionCultos() {
   return (

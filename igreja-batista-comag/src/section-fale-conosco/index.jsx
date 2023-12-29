@@ -1,7 +1,7 @@
 import "./style.css";
-import email from "../../public/email.svg";
-import message from "../../public/message.svg";
-import person from "../../public/person.svg";
+import email from "/email.svg";
+import message from "/message.svg";
+import person from "/person.svg";
 
 function SectionFaleConosco() {
   return (

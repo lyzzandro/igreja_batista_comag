@@ -3,7 +3,7 @@ import relogio from "/relogio.svg";
 
 function SectionProgramacao() {
   return (
-    <div className="section-programacao">
+    <div className="section-programacao" id="programacao">
       <div className="container">
         <div className="header-programacao">
           <h2 className="bold">Programação</h2>

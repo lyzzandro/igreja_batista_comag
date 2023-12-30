@@ -3,7 +3,7 @@ import dizimos from "/bg-dizimos.jpg";
 
 function SectionDizimos() {
   return (
-    <div className="section-dizimos">
+    <div className="section-dizimos" id="dizimos">
       <div className="container">
         <div className="header-dizimos">
           <div>

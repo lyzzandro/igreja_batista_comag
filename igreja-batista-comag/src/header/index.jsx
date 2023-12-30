@@ -71,7 +71,7 @@ function Header() {
                 Início
               </li>
             </a>
-            <a href="#">
+            <a href="#programacao">
               <li>
                 <img src={programacao} alt="Ícone de relógio" />
                 Programação
@@ -83,25 +83,25 @@ function Header() {
                 Recursos
               </li>
             </a>
-            <a href="#">
+            <a href="#dizimos">
               <li>
                 <img src={dizimo} alt="Ícone de coração" />
                 Dízimos e ofertas
               </li>
             </a>
-            <a href="#">
+            <a href="#cultos">
               <li>
                 <img src={cultos} alt="Ícone de câmera" />
                 Cultos gravados
               </li>
             </a>
-            <a href="#">
+            <a href="#fale-conosco">
               <li>
                 <img src={fale_conosco} alt="Ícone de telefone" />
                 Fale conosco
               </li>
             </a>
-            <a href="">
+            <a href="#localizacao">
               <li>
                 <img src={localizacao} alt="Ícone de pin" />
                 Localização

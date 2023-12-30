@@ -2,7 +2,7 @@ import "./style.css";
 
 function SectionLocalizacao() {
   return (
-    <div className="section-localizacao">
+    <div className="section-localizacao" id="localizacao">
       <div className="container">
         <div className="map">
           <iframe

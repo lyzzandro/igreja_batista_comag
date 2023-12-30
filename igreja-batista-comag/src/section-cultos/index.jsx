@@ -6,7 +6,7 @@ import youtube from "/youtube.svg";
 
 function SectionCultos() {
   return (
-    <div className="section-cultos">
+    <div className="section-cultos" id="cultos">
       <div className="container">
         <div className="header-cultos">
           <h2 className="bold">Cultos Gravados</h2>

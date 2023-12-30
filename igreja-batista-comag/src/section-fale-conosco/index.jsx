@@ -5,7 +5,7 @@ import person from "/person.svg";
 
 function SectionFaleConosco() {
   return (
-    <div className="section-fale-conosco">
+    <div className="section-fale-conosco" id="fale-conosco">
       <div className="container">
         <div className="header-fale-conosco">
           <h2 className="bold">Fale Conosco</h2>

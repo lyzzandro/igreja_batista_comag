@@ -1,6 +1,12 @@
 import "./style.css";
 import logo from "/logo.png";
-import menu from "/menu.svg";
+import inicio from "/home.svg";
+import programacao from "/watch_later.svg";
+import recursos from "/menu_book.svg";
+import dizimo from "/favorite_border.svg";
+import cultos from "/camera_alt.svg";
+import fale_conosco from "/phone_enabled.svg";
+import localizacao from "/place.svg";
 import React, { useState } from "react";
 
 function Header() {
@@ -60,22 +66,46 @@ function Header() {
         >
           <ul>
             <a href="#">
-              <li>Início</li>
+              <li>
+                <img src={inicio} alt="Ícone de incício" />
+                Início
+              </li>
             </a>
             <a href="#">
-              <li>Programação</li>
+              <li>
+                <img src={programacao} alt="Ícone de relógio" />
+                Programação
+              </li>
             </a>
             <a href="#">
-              <li>Dízimos e ofertas</li>
+              <li>
+                <img src={recursos} alt="Ícone de relógio" />
+                Recursos
+              </li>
             </a>
             <a href="#">
-              <li>Cultos gravados</li>
+              <li>
+                <img src={dizimo} alt="Ícone de coração" />
+                Dízimos e ofertas
+              </li>
             </a>
             <a href="#">
-              <li>Fale conosco</li>
+              <li>
+                <img src={cultos} alt="Ícone de câmera" />
+                Cultos gravados
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <img src={fale_conosco} alt="Ícone de telefone" />
+                Fale conosco
+              </li>
             </a>
             <a href="">
-              <li>Localização</li>
+              <li>
+                <img src={localizacao} alt="Ícone de pin" />
+                Localização
+              </li>
             </a>
           </ul>
         </div>

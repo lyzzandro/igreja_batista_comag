@@ -15,6 +15,7 @@
 
 .header-programacao p {
   text-align: center;
+  color: var(--grey-300);
 }
 
 .section-programacao .container {
@@ -67,7 +68,7 @@
 .horario {
   border-radius: 8px;
   display: flex;
-  flex:1 1 auto;
+  flex: 1 1 auto;
   flex-direction: column;
   background-color: var(--white-400);
   -webkit-border-radius: 8px;

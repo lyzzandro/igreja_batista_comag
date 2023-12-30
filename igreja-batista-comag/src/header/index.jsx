@@ -28,27 +28,27 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="#programacao" className="links-header">
                 Programação
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="#dizimos" className="links-header">
                 Dízimos e Ofertas
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="#cultos" className="links-header">
                 Cultos Gravados
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="#fale-conosco" className="links-header">
                 Fale Conosco
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="#localizacao" className="links-header">
                 Localização
               </a>
             </li>

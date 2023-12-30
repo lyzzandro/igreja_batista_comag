@@ -9,10 +9,10 @@ function SectionCultos() {
     <div className="section-cultos" id="cultos">
       <div className="container">
         <div className="header-cultos">
-          <h2 className="bold">Cultos Gravados</h2>
+          <h2 className="bold">Cultos gravados</h2>
           <p>
             Assista nossas pregações na íntegra através do nosso canal do
-            YouTube.
+            YouTube
           </p>
         </div>
         <div className="capas-youtube">

@@ -8,8 +8,8 @@ function SectionFaleConosco() {
     <div className="section-fale-conosco" id="fale-conosco">
       <div className="container">
         <div className="header-fale-conosco">
-          <h2 className="bold">Fale Conosco</h2>
-          <p>Envie sua mensagem para nós.</p>
+          <h2 className="bold">Fale conosco</h2>
+          <p>Envie sua mensagem para nós</p>
         </div>
 
         <form action="https://formsubmit.co/ibcomag@gmail.com" method="POST">

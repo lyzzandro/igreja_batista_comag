@@ -6,7 +6,7 @@ function SectionHero() {
       <div className="container">
         <div className="header-hero">
           <h1>Igreja Batista COMAG</h1>
-          <h2>Uma igreja que ama, uma igreja que ora</h2>
+          <h2>Uma igreja que ama, uma igreja que ora!</h2>
         </div>
 
         <button className="button-fill">Dias de cultos</button>

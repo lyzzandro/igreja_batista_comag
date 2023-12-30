@@ -7,7 +7,7 @@ function SectionDizimos() {
       <div className="container">
         <div className="header-dizimos">
           <div>
-            <h2 className="bold">Dízimos e Ofertas</h2>
+            <h2 className="bold">Dízimos e ofertas</h2>
             <p>
               Sua doação é um ato de amor e compromisso com a obra do Senhor e
               sua igreja local. Muito obrigado!

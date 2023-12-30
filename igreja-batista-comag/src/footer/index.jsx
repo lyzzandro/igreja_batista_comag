@@ -102,7 +102,7 @@ function SectionFooter() {
             </a>
 
             <div>
-              <p className="link-site">ibcomag.org.br</p>
+              <p className="link-site">ibcomag.com.br</p>
               <p className="info-site">
                 Copyright © 2024 Igreja Batista Comunidade André Gadelha
               </p>

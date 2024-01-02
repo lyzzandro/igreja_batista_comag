@@ -51,6 +51,19 @@ function SectionProgramacao() {
               </div>
             </div>
           </div>
+
+          <div className="horario">
+            <div className="dia">
+              <p>SÁBADO</p>
+            </div>
+            <div className="info">
+              <p>Culto Jovem</p>
+              <div className="hora">
+                <img src={relogio} alt="Imagem de um relógio" />
+                <p>19:30h</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

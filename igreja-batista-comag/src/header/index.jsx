@@ -7,6 +7,7 @@ import dizimo from "/favorite_border.svg";
 import cultos from "/camera_alt.svg";
 import fale_conosco from "/phone_enabled.svg";
 import localizacao from "/place.svg";
+import arrow from "/keyboard_arrow_down.svg";
 import React, { useState } from "react";
 
 function Header() {
@@ -24,32 +25,69 @@ function Header() {
           <ul>
             <li>
               <a href="#" className="links-header">
-                Início
+                SOBRE
+                <img src={arrow} alt="Ícone de seta pra baixo" />
               </a>
+              <ul className="dropdown">
+                <li>
+                  <a href="#">Quem somos</a>
+                </li>
+                <li>
+                  <a href="#">O Que Cremos</a>
+                </li>
+                <li>
+                  <a href="#fale-conosco">Contato</a>
+                </li>
+                <li>
+                  <a href="#localizacao">Localização</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#programacao" className="links-header">
-                Programação
+                DEVOCINONAIS
+                <img src={arrow} alt="Ícone de seta pra baixo" />
               </a>
+              <ul className="dropdown">
+                <li>
+                  <a href="#">Promessas Preciosas (Charles Spurgen)</a>
+                </li>
+                <li>
+                  <a href="#">
+                    Devocional Diária (Pr. Joselito Garrido Fernandes)
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#dizimos" className="links-header">
-                Dízimos e Ofertas
+                LIVROS
+                <img src={arrow} alt="Ícone de seta pra baixo" />
               </a>
+              <ul className="dropdown">
+                <li>
+                  <a href="#">Angelologia (Pr. Joselito Garrido Fernandes)</a>
+                </li>
+                <li>
+                  <a href="#">
+                    O Caminho Da Oração (Pr. Joselito Garrido Fernandes)
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#cultos" className="links-header">
-                Cultos Gravados
+                ARTIGOS
               </a>
             </li>
             <li>
               <a href="#fale-conosco" className="links-header">
-                Fale Conosco
+                MÚSICAS
               </a>
             </li>
             <li>
               <a href="#localizacao" className="links-header">
-                Localização
+                DOE
               </a>
             </li>
           </ul>

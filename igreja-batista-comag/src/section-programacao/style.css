@@ -13,6 +13,11 @@
   gap: 16px;
 }
 
+.header-programacao h2 {
+  text-align: center;
+  color: var(--grey-400);
+}
+
 .header-programacao p {
   text-align: center;
   color: var(--grey-300);
@@ -28,14 +33,15 @@
 
 .horarios {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
   width: 100%;
 }
 
 .dia {
-  color: var(--white-50);
-  background-color: var(--grey-600);
+  color: var(--blue-400);
+  background-color: var(--blue-100);
   padding: 8px 16px;
   display: flex;
   align-items: center;
@@ -56,7 +62,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 16px;
-  color: var(--grey-600);
+  color: var(--blue-800);
 }
 
 .hora {
@@ -66,13 +72,19 @@
 }
 
 .horario {
+  width: 592px;
   border-radius: 8px;
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
-  background-color: var(--white-400);
+  background-color: var(--blue-50);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .horario {
+    width: 100%;
+  }
 }

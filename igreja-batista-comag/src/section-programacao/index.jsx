@@ -1,5 +1,5 @@
 import "./style.css";
-import relogio from "/relogio.svg";
+import relogio from "/schedule.svg";
 
 function SectionProgramacao() {
   return (

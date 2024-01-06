@@ -9,7 +9,9 @@ function SectionHero() {
           <h2>Uma igreja que ama, uma igreja que ora!</h2>
         </div>
 
-        <button className="button-fill">Dias de cultos</button>
+        <a href="#programacao">
+          <button className="button-fill">Dias de cultos</button>
+        </a>
       </div>
     </div>
   );

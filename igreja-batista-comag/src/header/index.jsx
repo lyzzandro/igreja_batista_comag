@@ -2,12 +2,15 @@ import "./style.css";
 import logo from "/logo.png";
 import inicio from "/home.svg";
 import programacao from "/watch_later.svg";
-import recursos from "/menu_book.svg";
+import book from "/book.svg";
 import dizimo from "/favorite_border.svg";
 import cultos from "/camera_alt.svg";
 import fale_conosco from "/phone_enabled.svg";
 import localizacao from "/place.svg";
 import arrow from "/keyboard_arrow_down.svg";
+import church from "/church.svg";
+import article from "/article.svg";
+import music from "/music_note.svg";
 import React, { useState } from "react";
 
 function Header() {
@@ -25,8 +28,9 @@ function Header() {
           <ul>
             <li>
               <a href="#" className="links-header">
+                <img src={church} alt="Ícone de igreja" className='icones'/>
                 SOBRE
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
               </a>
               <ul className="dropdown">
                 <li>
@@ -45,8 +49,9 @@ function Header() {
             </li>
             <li>
               <a href="#programacao" className="links-header">
+                <img src={programacao} alt="Ícone de relógio" className='icones'/>
                 DEVOCINONAIS
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
               </a>
               <ul className="dropdown">
                 <li>
@@ -61,8 +66,9 @@ function Header() {
             </li>
             <li>
               <a href="#dizimos" className="links-header">
+              <img src={book} alt="Ícone de livro" className='icones'/>
                 LIVROS
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
               </a>
               <ul className="dropdown">
                 <li>
@@ -77,16 +83,19 @@ function Header() {
             </li>
             <li>
               <a href="#cultos" className="links-header">
+              <img src={article} alt="Ícone de igreja" className='icones'/>
                 ARTIGOS
               </a>
             </li>
             <li>
               <a href="#fale-conosco" className="links-header">
+              <img src={music} alt="Ícone de igreja" className='icones'/>
                 MÚSICAS
               </a>
             </li>
             <li>
               <a href="#localizacao" className="links-header">
+              <img src={dizimo} alt="Ícone de igreja" className='icones'/>
                 DOE
               </a>
             </li>
@@ -117,7 +126,7 @@ function Header() {
             </a>
             <a href="#">
               <li>
-                <img src={recursos} alt="Ícone de relógio" />
+                <img src={book} alt="Ícone de livro" />
                 Recursos
               </li>
             </a>

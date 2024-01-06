@@ -14,14 +14,13 @@ a {
 }
 
 .links-header {
-  padding: 24px 16px;
+  padding: 28px 24px;
   gap: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: var(--grey-800);
-  border-bottom: 2px solid transparent;
+  color: var(--blue-600);
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -30,8 +29,21 @@ a {
 }
 
 .links-header:hover {
-  color: none;
-  border-bottom: 2px solid var(--yellow-400);
+  color: var(--blue-50);
+  background-color: var(--blue-600);
+}
+
+.links-header .icones {
+  transition: all 300ms ease-in-out;
+}
+
+.links-header:hover .icones {
+  filter: invert(100%) sepia(85%) saturate(0%) hue-rotate(179deg)
+    brightness(101%) contrast(89%);
+}
+
+.links-header .icones:first-of-type{
+  margin: 0 8px 0 0;
 }
 
 .link-footer {

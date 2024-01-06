@@ -29,8 +29,12 @@
 }
 
 .header-dizimos h2 {
-  color: var(--white-50);
+  color: var(--white-500);
   text-align: left;
+}
+
+.header-dizimos p {
+  color: var(--white-600);
 }
 
 img {

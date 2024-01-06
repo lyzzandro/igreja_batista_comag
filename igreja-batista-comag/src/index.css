@@ -42,7 +42,7 @@ a {
     brightness(101%) contrast(89%);
 }
 
-.links-header .icones:first-of-type{
+.links-header .icones:first-of-type {
   margin: 0 8px 0 0;
 }
 
@@ -111,6 +111,10 @@ a {
   --yellow-700: #a88300;
   --yellow-800: #826500;
   --yellow-900: #634d00;
+}
+
+p {
+  line-height: 150%;
 }
 
 h1 {
@@ -183,6 +187,7 @@ button {
 }
 
 .button-outline:hover {
+  background-color: rgba(246, 222, 138, 0.15);
   color: var(--yellow-600);
   border: 2px solid var(--yellow-600);
 }

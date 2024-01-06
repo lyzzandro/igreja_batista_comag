@@ -37,7 +37,7 @@ ul {
   display: flex;
   position: absolute;
   right: 0px;
-  top: 84px;
+  top: 80px;
   width: 312px;
   height: 100vh;
   background-color: var(--blue-600);

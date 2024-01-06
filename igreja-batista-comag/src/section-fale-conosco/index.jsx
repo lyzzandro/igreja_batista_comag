@@ -9,7 +9,7 @@ function SectionFaleConosco() {
       <div className="container">
         <div className="header-fale-conosco">
           <h2 className="bold">Fale conosco</h2>
-          <p>Envie sua mensagem para nós</p>
+          <p>Envie sua mensagem ou seu pedido de oração</p>
         </div>
 
         <form action="https://formsubmit.co/ibcomag@gmail.com" method="POST">
@@ -50,7 +50,7 @@ function SectionFaleConosco() {
               required
             ></textarea>
           </div>
-          <button className="button-fill" type="submit">
+          <button className="button-fill" type="submit" id='btn-form'>
             Enviar mensagem
           </button>
         </form>

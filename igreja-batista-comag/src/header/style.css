@@ -53,6 +53,7 @@ ul {
 .menu ul li {
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
   gap: 1.6rem;
   padding: 1.2rem 2.4rem;
   color: var(--white-50);
@@ -80,6 +81,7 @@ ul li ul.dropdown li {
 ul li ul.dropdown li a {
   color: var(--white-50);
   width: 100%;
+  font-weight: 700;
   padding: 1.2rem 2.4rem;
   transition: 0.2s all;
   -webkit-transition: 0.2s all;

@@ -23,6 +23,7 @@ a {
   padding: 28px 24px;
   gap: 4px;
   display: flex;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -231,7 +232,6 @@ button {
 /* END Buttons styles */
 
 @media (max-width: 480px) {
-
   button {
     font-size: 1.2rem;
   }

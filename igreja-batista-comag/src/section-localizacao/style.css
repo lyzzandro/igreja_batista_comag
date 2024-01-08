@@ -19,3 +19,9 @@ iframe {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
+@media (max-width: 480px) {
+  .section-localizacao {
+    padding: 3.2rem 0;
+  }
+}

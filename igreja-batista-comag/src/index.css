@@ -3,13 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Links INICIO*/
 
 a {
+  font-size: 1.6rem;
+  line-height: 150%;
   text-decoration: none;
 }
 
@@ -121,27 +127,50 @@ a {
   --yellow-900: #634d00;
 }
 
-p {
-  line-height: 150%;
-}
-
 h1 {
-  color: var(--yellow-600);
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 4.8rem;
   line-height: 110%;
-  text-align: center;
 }
 
 h2 {
-  color: var(--grey-800);
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 4rem;
   line-height: 110%;
-  width: 450px;
+}
+
+h3 {
+  font-size: 3.3rem;
+  line-height: 110%;
+}
+
+h4 {
+  font-size: 2.76rem;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 2.3rem;
+  line-height: 120%;
+}
+
+h6 {
+  font-size: 1.9rem;
+  line-height: 120%;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.small {
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.6rem;
+  line-height: 150%;
 }
 
 li {
@@ -201,17 +230,68 @@ button {
 }
 /* END Buttons styles */
 
-@media (max-width: 1216px) {
-  .container {
-    padding: 0px 20px;
+@media (max-width: 480px) {
+
+  button {
+    font-size: 1.2rem;
   }
-  h2 {
+  .container {
+    gap: 16px;
+  }
+  button,
+  .button-outline,
+  .button-fill,
+  .youtube,
+  .button-link {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 110%;
+  }
+
+  h2 {
+    font-size: 3.3rem;
+    line-height: 110%;
+  }
+
+  h3 {
+    font-size: 2.76rem;
+    line-height: 110%;
+  }
+
+  h4 {
+    font-size: 2.3rem;
+    line-height: 120%;
+  }
+
+  h5 {
+    font-size: 1.9rem;
+    line-height: 120%;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+    line-height: 120%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.2rem;
+    line-height: 150%;
   }
 }
 
-@media (max-width: 480px) {
-  button {
+@media (max-width: 1216px) {
+  .container {
+    padding: 0px 2.4rem;
+  }
+  h2 {
     width: 100%;
   }
 }

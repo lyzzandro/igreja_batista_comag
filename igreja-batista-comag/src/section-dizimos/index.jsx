@@ -14,9 +14,11 @@ function SectionDizimos() {
               nossas ações e projetos.
             </p>
           </div>
-          <button className="button-outline">
-            Veja todas as formas de colaborar
-          </button>
+          <a href="#" className="button-link">
+            <button className="button-outline">
+              Veja todas as formas de colaborar
+            </button>
+          </a>
         </div>
         <img src={dizimos} alt="Imagem dizimos e ofertas" />
       </div>

@@ -15,7 +15,8 @@ function SectionFaleConosco() {
         <form action="https://formsubmit.co/ibcomag@gmail.com" method="POST">
           <div className="campos">
             <label htmlFor="nome">
-              <img src={person} alt="SVG de uma pessoa" /> Nome
+              <img src={person} alt="SVG de uma pessoa" />
+              <p>Nome</p>
             </label>
             <input
               type="text"
@@ -28,7 +29,8 @@ function SectionFaleConosco() {
 
           <div className="campos">
             <label htmlFor="email">
-              <img src={email} alt="SVG de um email" /> E-mail
+              <img src={email} alt="SVG de um email" />
+              <p>E-mail</p>
             </label>
             <input
               type="text"
@@ -41,7 +43,8 @@ function SectionFaleConosco() {
 
           <div className="campos">
             <label htmlFor="mensagem">
-              <img src={message} alt="SVG de uma mensagem" /> Mensagem
+              <img src={message} alt="SVG de uma mensagem" />
+              <p>Mensagem</p>
             </label>
             <textarea
               placeholder="Escreva sua mensagem"
@@ -50,8 +53,8 @@ function SectionFaleConosco() {
               required
             ></textarea>
           </div>
-          <button className="button-fill" type="submit" id='btn-form'>
-            Enviar mensagem
+          <button className="button-fill" type="submit">
+            <p className="bold">Enviar mensagem</p>
           </button>
         </form>
       </div>

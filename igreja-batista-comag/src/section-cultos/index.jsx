@@ -36,7 +36,11 @@ function SectionCultos() {
           </a>
         </div>
 
-        <a href="https://ibcomag.page.link/youtube" target="__blank">
+        <a
+          href="https://ibcomag.page.link/youtube"
+          target="__blank"
+          className="button-link"
+        >
           <button className="button-fill youtube">
             <img src={youtube} alt="Logo do youtube" />
             Nosso canal no YouTube

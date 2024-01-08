@@ -14,6 +14,7 @@ import articleWhite from "/article-white.svg";
 import music from "/music_note.svg";
 import musicWhite from "/music_note-white.svg";
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 
 function Header() {
   const [toggle, setToggle] = useState(true);
@@ -40,7 +41,7 @@ function Header() {
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="missao_e_proposito">Nossa missão e propósito</a>
+                  <Link to="/missao_e_proposito">Nossa missão e propósito</Link>
                 </li>
                 <li>
                   <a href="#">Em que cremos</a>

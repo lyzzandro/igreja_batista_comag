@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-50);
+  border-bottom: 0.1rem solid var(--blue-100);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+header ul li {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 8rem;
+  width: 31.2rem;
+  height: 100vh;
+  background-color: var(--blue-600);
+}
+
+.menu ul {
+  display: flex;
+  padding: 2.4rem 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  color: var(--white-50);
+  width: 100%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.menu ul li:hover {
+  background-color: var(--yellow-600);
+  color: var(--white-50);
+}
+
+ul li ul.dropdown li {
+  color: var(--white-50);
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  border-bottom: 0.1rem solid var(--blue-400);
+}
+
+ul li ul.dropdown li a {
+  color: var(--white-50);
+  width: 100%;
+  font-weight: 700;
+  padding: 1.2rem 2.4rem;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+
+ul li ul.dropdown li a:hover {
+  background-color: var(--yellow-600);
+}
+
+ul li ul.dropdown {
+  width: 28rem;
+  position: absolute;
+  background-color: var(--blue-600);
+  top: 8rem;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  ul {
+    display: none;
+  }
+  header button {
+    display: flex;
+    width: fit-content;
+  }
+}

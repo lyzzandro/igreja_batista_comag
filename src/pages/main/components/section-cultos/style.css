@@ -1,0 +1,74 @@
+.section-cultos {
+  background-color: var(--blue-50);
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cultos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--grey-300);
+}
+
+.header-cultos h2 {
+  color: var(--blue-600);
+}
+
+.header-cultos p {
+  color: var(--blue-400);
+}
+
+.capas-youtube {
+  display: flex;
+  gap: 3.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.capas-youtube a {
+  transition: 200ms ease-in-out;
+  padding: 0;
+}
+
+.capas-youtube a:hover {
+  border: none;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.youtube {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .section-cultos {
+    padding: 3.2rem 0;
+  }
+  .header-cultos {
+    gap: 0.8rem;
+  }
+
+  .capas-youtube {
+    gap: 1.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .capas-youtube a {
+    width: 100%;
+  }
+  .capas-youtube img {
+    width: 100%;
+  }
+  .header-cultos {
+    text-align: center;
+  }
+}

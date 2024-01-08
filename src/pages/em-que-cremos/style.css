@@ -1,0 +1,13 @@
+.em-que-cremos {
+  margin-top: 8rem;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .em-que-cremos {
+    padding: 3.2rem 0;
+  }
+}

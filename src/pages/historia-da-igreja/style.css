@@ -1,0 +1,13 @@
+.historia-da-igreja{
+  margin-top: 8rem;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .historia-da-igreja {
+    padding: 3.2rem 0;
+  }
+}

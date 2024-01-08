@@ -1,7 +1,8 @@
 import Main from "./pages/main";
+import EmQueCremos from "./pages/em-que-cremos";
 import MissaoEProposito from "./pages/missao-e-proposito";
+import HistoriaDaIgreja from "./pages/historia-da-igreja";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// import React from "react";
 
 const routerPublic = createBrowserRouter([
   {
@@ -14,11 +15,11 @@ const routerPublic = createBrowserRouter([
   },
   {
     path: "/em_que_cremos",
-    element: <MissaoEProposito />,
+    element: <EmQueCremos />,
   },
   {
     path: "/historia_da_igreja",
-    element: <MissaoEProposito />,
+    element: <HistoriaDaIgreja />,
   },
   {
     path: "/contato",
@@ -32,6 +33,6 @@ const routerPublic = createBrowserRouter([
 
 const Routers = () => {
   return <RouterProvider router={routerPublic} />;
-}
+};
 
 export default Routers;

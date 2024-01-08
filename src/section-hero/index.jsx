@@ -5,11 +5,13 @@ function SectionHero() {
     <div className="section-hero">
       <div className="container">
         <div className="header-hero">
-          <h1>Igreja Batista COMAG</h1>
+          <h1 className="bold">IBCOMAG</h1>
           <h2>Uma igreja que ama, uma igreja que ora!</h2>
         </div>
 
-        <button className="button-fill">Dias de cultos</button>
+        <a href="#programacao" className="button-link">
+          <button className="button-fill">Dias de cultos</button>
+        </a>
       </div>
     </div>
   );

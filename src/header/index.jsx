@@ -1,13 +1,18 @@
 import "./style.css";
 import logo from "/logo.png";
-import inicio from "/home.svg";
 import programacao from "/watch_later.svg";
-import recursos from "/menu_book.svg";
+import programacaoWhite from "/watch_later-white.svg";
+import book from "/book.svg";
+import bookWhite from "/book-white.svg";
 import dizimo from "/favorite_border.svg";
-import cultos from "/camera_alt.svg";
-import fale_conosco from "/phone_enabled.svg";
-import localizacao from "/place.svg";
+import dizimoWhite from "/favorite_border-white.svg";
 import arrow from "/keyboard_arrow_down.svg";
+import church from "/church.svg";
+import churchWhite from "/church-white.svg";
+import article from "/article.svg";
+import articleWhite from "/article-white.svg";
+import music from "/music_note.svg";
+import musicWhite from "/music_note-white.svg";
 import React, { useState } from "react";
 
 function Header() {
@@ -25,15 +30,23 @@ function Header() {
           <ul>
             <li>
               <a href="#" className="links-header">
+                <img src={church} alt="Ícone de igreja" className="icones" />
                 SOBRE
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="#">Quem somos</a>
+                  <a href="#">Nossa missão e propósito</a>
                 </li>
                 <li>
-                  <a href="#">O Que Cremos</a>
+                  <a href="#">Em que cremos</a>
+                </li>
+                <li>
+                  <a href="#">História da Igreja</a>
                 </li>
                 <li>
                   <a href="#fale-conosco">Contato</a>
@@ -44,9 +57,18 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#programacao" className="links-header">
-                DEVOCINONAIS
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+              <a href="#" className="links-header">
+                <img
+                  src={programacao}
+                  alt="Ícone de relógio"
+                  className="icones "
+                />
+                DEVOCIONAIS
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
@@ -60,33 +82,58 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#dizimos" className="links-header">
+              <a href="#" className="links-header">
+                <img src={book} alt="Ícone de livro" className="icones" />
                 LIVROS
-                <img src={arrow} alt="Ícone de seta pra baixo" />
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="#">Angelologia (Pr. Joselito Garrido Fernandes)</a>
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua10433/"
+                    target="_blank"
+                  >
+                    Angelologia (Pr. Joselito Garrido Fernandes)
+                  </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua12715/"
+                    target="_blank"
+                  >
                     O Caminho Da Oração (Pr. Joselito Garrido Fernandes)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua47600/"
+                    target="_blank"
+                  >
+                    Fé, perseverança e firmeza com Cristo (Pr. Joselito Garrido
+                    Fernandes)
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#cultos" className="links-header">
+              <a href="#" className="links-header">
+                <img src={article} alt="Ícone de igreja" className="icones" />
                 ARTIGOS
               </a>
             </li>
             <li>
-              <a href="#fale-conosco" className="links-header">
+              <a href="#" className="links-header">
+                <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
               </a>
             </li>
             <li>
-              <a href="#localizacao" className="links-header">
+              <a href="#" className="links-header">
+                <img src={dizimo} alt="Ícone de igreja" className="icones" />
                 DOE
               </a>
             </li>
@@ -105,44 +152,38 @@ function Header() {
           <ul>
             <a href="#">
               <li>
-                <img src={inicio} alt="Ícone de incício" />
-                Início
-              </li>
-            </a>
-            <a href="#programacao">
-              <li>
-                <img src={programacao} alt="Ícone de relógio" />
-                Programação
+                <img src={churchWhite} alt="Ícone de incício" />
+                SOBRE
               </li>
             </a>
             <a href="#">
               <li>
-                <img src={recursos} alt="Ícone de relógio" />
-                Recursos
+                <img src={programacaoWhite} alt="Ícone de relógio" />
+                DEVOCIONAIS
               </li>
             </a>
-            <a href="#dizimos">
+            <a href="#">
               <li>
-                <img src={dizimo} alt="Ícone de coração" />
-                Dízimos e ofertas
+                <img src={bookWhite} alt="Ícone de livro" />
+                LIVROS
               </li>
             </a>
-            <a href="#cultos">
+            <a href="#">
               <li>
-                <img src={cultos} alt="Ícone de câmera" />
-                Cultos gravados
+                <img src={articleWhite} alt="Ícone de coração" />
+                ARTIGOS
               </li>
             </a>
-            <a href="#fale-conosco">
+            <a href="#">
               <li>
-                <img src={fale_conosco} alt="Ícone de telefone" />
-                Fale conosco
+                <img src={musicWhite} alt="Ícone de câmera" />
+                MÚSICAS
               </li>
             </a>
-            <a href="#localizacao">
+            <a href="#">
               <li>
-                <img src={localizacao} alt="Ícone de pin" />
-                Localização
+                <img src={dizimoWhite} alt="Ícone de telefone" />
+                DOE
               </li>
             </a>
           </ul>

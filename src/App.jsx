@@ -13,9 +13,9 @@ function App() {
     <>
       <Header></Header>
       <SectionHero></SectionHero>
+      <SectionCultos></SectionCultos>
       <SectionProgramacao></SectionProgramacao>
       <SectionDizimos></SectionDizimos>
-      <SectionCultos></SectionCultos>
       <SectionFaleConosco></SectionFaleConosco>
       <SectionLocalizacao></SectionLocalizacao>
       <SectionFooter></SectionFooter>

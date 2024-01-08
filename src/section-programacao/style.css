@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  padding: 8rem 0;
 }
 
 .header-programacao {
@@ -10,7 +10,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
+}
+
+.header-programacao h2 {
+  text-align: center;
+  color: var(--grey-400);
 }
 
 .header-programacao p {
@@ -28,23 +33,24 @@
 
 .horarios {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 3.2rem;
   width: 100%;
 }
 
 .dia {
-  color: var(--white-50);
-  background-color: var(--grey-600);
-  padding: 8px 16px;
+  color: var(--blue-400);
+  background-color: var(--blue-100);
+  padding: 0.8rem 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px 8px 0 0;
-  -webkit-border-radius: 8px 8px 0 0;
-  -moz-border-radius: 8px 8px 0 0;
-  -ms-border-radius: 8px 8px 0 0;
-  -o-border-radius: 8px 8px 0 0;
+  border-radius: 0.8rem 0.8rem 0 0;
+  -webkit-border-radius: 0.8rem 0.8rem 0 0;
+  -moz-border-radius: 0.8rem 0.8rem 0 0;
+  -ms-border-radius: 0.8rem 0.8rem 0 0;
+  -o-border-radius: 0.8rem 0.8rem 0 0;
   font-weight: 700;
   line-height: 150%;
 }
@@ -52,27 +58,42 @@
 .info {
   display: flex;
   height: 100%;
-  gap: 16px;
+  gap: 1.6rem;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 16px;
-  color: var(--grey-600);
+  padding: 2.4rem 1.6rem;
+  color: var(--blue-800);
 }
 
 .hora {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .horario {
-  border-radius: 8px;
+  width: 592px;
+  border-radius: 0.8rem;
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
-  background-color: var(--white-400);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  background-color: var(--blue-50);
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .section-programacao {
+    padding: 3.2rem 0;
+  }
+  .horarios {
+    gap: 1.6rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .horario {
+    width: 100%;
+  }
 }

@@ -17,21 +17,21 @@ function SectionFooter() {
               target="__blank"
               className="link-footer"
             >
-              ibcomag@gmail.com
+              <p>ibcomag@gmail.com</p>
             </a>
             <a
               href="https://web.whatsapp.com/send?phone=5583991940303"
               target="__blank"
               className="link-footer"
             >
-              +55 (83) 99194-0303
+              <p>+55 (83) 99194-0303</p>
             </a>
             <a
               href="https://web.whatsapp.com/send?phone=5583991607575"
               target="__blank"
               className="link-footer"
             >
-              +55 (83) 99160-7575
+              <p>+55 (83) 99160-7575</p>
             </a>
           </div>
           <div className="col-links">
@@ -41,21 +41,21 @@ function SectionFooter() {
               target="__blank"
               className="link-footer"
             >
-              Rua Adilmar de Paiva Gadelha, 01
+              <p>Rua Adilmar de Paiva Gadelha, 01</p>
             </a>
             <a
               href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
               target="__blank"
               className="link-footer"
             >
-              Bairro André Gadelha
+              <p>Bairro André Gadelha</p>
             </a>
             <a
               href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
               target="__blank"
               className="link-footer"
             >
-              Sousa, PB
+              <p>Sousa, PB</p>
             </a>
           </div>
           <div className="col-links">
@@ -65,33 +65,33 @@ function SectionFooter() {
               target="__blank"
               className="link-footer"
             >
-              Instagram
+              <p>Instagram</p>
             </a>
             <a
               href="https://ibcomag.page.link/youtube"
               target="__blank"
               className="link-footer"
             >
-              Youtube
+              <p>Youtube</p>
             </a>
             <a
               href="https://www.facebook.com/ibcomag"
               target="__blank"
               className="link-footer"
             >
-              Facebook
+              <p>Facebook</p>
             </a>
           </div>
           <div className="col-links">
             <p className="title-links">Sobre</p>
             <a href="" className="link-footer">
-              Nossa História
+              <p>Nossa História</p>
             </a>
             <a href="" className="link-footer">
-              Liderança
+              <p>Liderança</p>
             </a>
             <a href="" className="link-footer">
-              Ministérios
+              <p>Ministérios</p>
             </a>
           </div>
         </div>

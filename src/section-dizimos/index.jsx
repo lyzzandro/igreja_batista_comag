@@ -7,15 +7,18 @@ function SectionDizimos() {
       <div className="container">
         <div className="header-dizimos">
           <div>
-            <h2 className="bold">Dízimos e ofertas</h2>
+            <h2 className="bold">Contribua com a obra de Deus</h2>
             <p>
-              Sua doação é um ato de amor e compromisso com a obra do Senhor e
-              sua igreja local. Muito obrigado!
+              Sua contribuição é um ato voluntário, uma decisão de amor pela
+              obra de Deus e pelas vidas que podem ser abençoadas por meio de
+              nossas ações e projetos.
             </p>
           </div>
-          <button className="button-outline">
-            Veja todas as formas de colaborar
-          </button>
+          <a href="#" className="button-link">
+            <button className="button-outline">
+              Veja todas as formas de colaborar
+            </button>
+          </a>
         </div>
         <img src={dizimos} alt="Imagem dizimos e ofertas" />
       </div>

@@ -40,7 +40,7 @@ function Header() {
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="missao_e_proposito">Nossa missão e propósito</a>
+                  <a href="/missao_e_proposito">Nossa missão e propósito</a>
                 </li>
                 <li>
                   <a href="#">Em que cremos</a>

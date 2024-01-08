@@ -28,16 +28,23 @@ function Header() {
           <ul>
             <li>
               <a href="#" className="links-header">
-                <img src={church} alt="Ícone de igreja" className='icones'/>
+                <img src={church} alt="Ícone de igreja" className="icones" />
                 SOBRE
-                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="#">Quem somos</a>
+                  <a href="#">Nossa missão e propósito</a>
                 </li>
                 <li>
-                  <a href="#">O Que Cremos</a>
+                  <a href="#">Em que cremos</a>
+                </li>
+                <li>
+                  <a href="#">História da Igreja</a>
                 </li>
                 <li>
                   <a href="#fale-conosco">Contato</a>
@@ -49,9 +56,17 @@ function Header() {
             </li>
             <li>
               <a href="#programacao" className="links-header">
-                <img src={programacao} alt="Ícone de relógio" className='icones'/>
-                DEVOCINONAIS
-                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
+                <img
+                  src={programacao}
+                  alt="Ícone de relógio"
+                  className="icones "
+                />
+                DEVOCIONAIS
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
@@ -65,37 +80,58 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#dizimos" className="links-header">
-              <img src={book} alt="Ícone de livro" className='icones'/>
+              <a href="#" className="links-header">
+                <img src={book} alt="Ícone de livro" className="icones" />
                 LIVROS
-                <img src={arrow} alt="Ícone de seta pra baixo" className='icones'/>
+                <img
+                  src={arrow}
+                  alt="Ícone de seta pra baixo"
+                  className="icones arrow"
+                />
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="#">Angelologia (Pr. Joselito Garrido Fernandes)</a>
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua10433/"
+                    target="_blank"
+                  >
+                    Angelologia (Pr. Joselito Garrido Fernandes)
+                  </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua12715/"
+                    target="_blank"
+                  >
                     O Caminho Da Oração (Pr. Joselito Garrido Fernandes)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua47600/"
+                    target="_blank"
+                  >
+                    Fé, perseverança e firmeza com Cristo (Pr. Joselito Garrido
+                    Fernandes)
                   </a>
                 </li>
               </ul>
             </li>
             <li>
               <a href="#cultos" className="links-header">
-              <img src={article} alt="Ícone de igreja" className='icones'/>
+                <img src={article} alt="Ícone de igreja" className="icones" />
                 ARTIGOS
               </a>
             </li>
             <li>
               <a href="#fale-conosco" className="links-header">
-              <img src={music} alt="Ícone de igreja" className='icones'/>
+                <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
               </a>
             </li>
             <li>
               <a href="#localizacao" className="links-header">
-              <img src={dizimo} alt="Ícone de igreja" className='icones'/>
+                <img src={dizimo} alt="Ícone de igreja" className="icones" />
                 DOE
               </a>
             </li>

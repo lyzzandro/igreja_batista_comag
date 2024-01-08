@@ -42,6 +42,14 @@ a {
     brightness(101%) contrast(89%);
 }
 
+.links-header:hover .arrow {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
 .links-header .icones:first-of-type {
   margin: 0 8px 0 0;
 }

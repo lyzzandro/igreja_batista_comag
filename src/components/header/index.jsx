@@ -14,6 +14,7 @@ import articleWhite from "/article-white.svg";
 import music from "/music_note.svg";
 import musicWhite from "/music_note-white.svg";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [toggle, setToggle] = useState(true);
@@ -26,7 +27,10 @@ function Header() {
     <div className="header">
       <div className="container">
         <header>
-          <img src={logo} alt="Logo da igreja" />
+          <Link to="/">
+            <img src={logo} alt="Logo da igreja" />
+          </Link>
+
           <ul>
             <li>
               <a href="#" className="links-header">
@@ -40,19 +44,19 @@ function Header() {
               </a>
               <ul className="dropdown">
                 <li>
-                  <a href="/missao_e_proposito">Nossa missão e propósito</a>
+                  <Link to="/missao_e_proposito">Nossa missão e propósito</Link>
                 </li>
                 <li>
-                  <a href="#">Em que cremos</a>
+                  <Link to="/em_que_cremos">Em que cremos</Link>
                 </li>
                 <li>
-                  <a href="#">História da Igreja</a>
+                  <Link to="/historia_da_igreja">História da Igreja</Link>
                 </li>
                 <li>
-                  <a href="#fale-conosco">Contato</a>
+                  <Link to="/contato">Contato</Link>
                 </li>
                 <li>
-                  <a href="#localizacao">Localização</a>
+                  <Link to="/localizacao">Localização</Link>
                 </li>
               </ul>
             </li>

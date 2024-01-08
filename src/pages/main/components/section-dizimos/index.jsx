@@ -1,6 +1,7 @@
 import "./style.css";
 import dizimos from "/bg-dizimos.jpg";
 
+
 function SectionDizimos() {
   return (
     <div className="section-dizimos" id="dizimos">

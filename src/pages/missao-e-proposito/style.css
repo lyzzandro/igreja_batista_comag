@@ -1,0 +1,48 @@
+.missao-e-proposito {
+  margin-top: 8rem;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.missao-e-proposito .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.content img {
+  width: fit-content;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.content h4 {
+  color: var(--grey-400);
+}
+
+.content p {
+  color: var(--grey-800);
+}
+
+@media (max-width: 1024px) {
+  .missao-e-proposito {
+    padding: 3.2rem 0;
+  }
+  .missao-e-proposito .container {
+    flex-direction: column;
+  }
+
+  .imagem {
+    width: 100%;
+  }
+}

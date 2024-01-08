@@ -12,6 +12,22 @@ const routerPublic = createBrowserRouter([
     path: "/missao_e_proposito",
     element: <MissaoEProposito />,
   },
+  {
+    path: "/em_que_cremos",
+    element: <MissaoEProposito />,
+  },
+  {
+    path: "/historia_da_igreja",
+    element: <MissaoEProposito />,
+  },
+  {
+    path: "/contato",
+    element: <MissaoEProposito />,
+  },
+  {
+    path: "/localizacao",
+    element: <MissaoEProposito />,
+  },
 ]);
 
 const Routers = () => {

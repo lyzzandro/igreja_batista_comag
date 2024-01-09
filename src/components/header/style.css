@@ -50,10 +50,11 @@ ul {
   width: 100%;
 }
 
-.menu ul li {
+.menu ul li a {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+  font-weight: 700;
   gap: 1.6rem;
   padding: 1.2rem 2.4rem;
   color: var(--white-50);
@@ -65,7 +66,7 @@ ul {
   -o-transition: all 0.2s;
 }
 
-.menu ul li:hover {
+.menu ul li a:hover {
   background-color: var(--yellow-600);
   color: var(--white-50);
 }

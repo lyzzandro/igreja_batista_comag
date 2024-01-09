@@ -84,13 +84,13 @@ function SectionFooter() {
           </div>
           <div className="col-links">
             <p className="title-links">Sobre</p>
-            <a href="" className="link-footer">
+            <a href="#" className="link-footer">
               <p>Nossa História</p>
             </a>
-            <a href="" className="link-footer">
+            <a href="#" className="link-footer">
               <p>Liderança</p>
             </a>
-            <a href="" className="link-footer">
+            <a href="#" className="link-footer">
               <p>Ministérios</p>
             </a>
           </div>

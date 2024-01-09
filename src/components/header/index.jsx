@@ -154,42 +154,43 @@ function Header() {
           style={{ transform: toggle ? "translate(400px)" : "translate(0px)" }}
         >
           <ul>
-            <a href="#">
-              <li>
+            <li>
+              <a href="#">
                 <img src={churchWhite} alt="Ícone de incício" />
                 SOBRE
-              </li>
-            </a>
-            <a href="#">
-              <li>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
                 <img src={programacaoWhite} alt="Ícone de relógio" />
                 DEVOCIONAIS
-              </li>
-            </a>
-            <a href="#">
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src={bookWhite} alt="Ícone de livro" />
                 LIVROS
-              </li>
-            </a>
-            <a href="#">
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src={articleWhite} alt="Ícone de coração" />
                 ARTIGOS
-              </li>
-            </a>
-            <a href="#">
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src={musicWhite} alt="Ícone de câmera" />
                 MÚSICAS
-              </li>
-            </a>
-            <a href="#">
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src={dizimoWhite} alt="Ícone de telefone" />
                 DOE
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

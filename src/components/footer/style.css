@@ -72,11 +72,11 @@
 }
 
 .link-logos img {
-  transition: all 100ms ease-in-out;
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -ms-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
+  transition: 200ms all ease-in-out;
+  -webkit-transition: 200ms all ease-in-out;
+  -moz-transition: 200ms all ease-in-out;
+  -ms-transition: 200ms all ease-in-out;
+  -o-transition: 200ms all ease-in-out;
 }
 
 .link-logos img:hover {

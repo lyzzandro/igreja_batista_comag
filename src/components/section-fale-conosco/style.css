@@ -38,7 +38,7 @@ form {
 
 input,
 textarea {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 1.2rem 1.6rem;
   border-radius: 0.8rem;
   border: 0.1rem solid var(--grey-100);
@@ -80,5 +80,9 @@ label {
   }
   form {
     gap: 1.6rem;
+  }
+  input,
+  textarea {
+    font-size: 1.2rem;
   }
 }

@@ -2,6 +2,7 @@ import Main from "./pages/main";
 import EmQueCremos from "./pages/em-que-cremos";
 import MissaoEProposito from "./pages/missao-e-proposito";
 import HistoriaDaIgreja from "./pages/historia-da-igreja";
+import Contato from "./pages/contato";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const routerPublic = createBrowserRouter([
@@ -23,7 +24,7 @@ const routerPublic = createBrowserRouter([
   },
   {
     path: "/contato",
-    element: <MissaoEProposito />,
+    element: <Contato />,
   },
   {
     path: "/localizacao",

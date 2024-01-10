@@ -4,96 +4,22 @@ import email from "/Email icon.svg";
 import instagram from "/IG icon.svg";
 import facebook from "/Facebook icon.svg";
 import youtube from "/Youtube icon.svg";
+import { Link } from "react-router-dom";
+
+import SectionContato from "./components/SectionContato";
+import SectionEndereco from "./components/SectionEndereco";
+import SectionSobre from "./components/SectionSobre";
+import SectionRedesSorciais from "./components/SectionRedesSorciais";
 
 function SectionFooter() {
   return (
     <div className="footer">
       <div className="container">
         <div className="links">
-          <div className="col-links">
-            <p className="title-links">Contato</p>
-            <a
-              href="mailto:ibcomag@gmail.com"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>ibcomag@gmail.com</p>
-            </a>
-            <a
-              href="https://web.whatsapp.com/send?phone=5583991940303"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>+55 (83) 99194-0303</p>
-            </a>
-            <a
-              href="https://web.whatsapp.com/send?phone=5583991607575"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>+55 (83) 99160-7575</p>
-            </a>
-          </div>
-          <div className="col-links">
-            <p className="title-links">Endereço</p>
-            <a
-              href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Rua Adilmar de Paiva Gadelha, 01</p>
-            </a>
-            <a
-              href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Bairro André Gadelha</p>
-            </a>
-            <a
-              href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Sousa, PB</p>
-            </a>
-          </div>
-          <div className="col-links">
-            <p className="title-links">Redes Sociais</p>
-            <a
-              href="https://ibcomag.page.link/instagram"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Instagram</p>
-            </a>
-            <a
-              href="https://ibcomag.page.link/youtube"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Youtube</p>
-            </a>
-            <a
-              href="https://www.facebook.com/ibcomag"
-              target="__blank"
-              className="link-footer"
-            >
-              <p>Facebook</p>
-            </a>
-          </div>
-          <div className="col-links">
-            <p className="title-links">Sobre</p>
-            <a href="#" className="link-footer">
-              <p>Nossa História</p>
-            </a>
-            <a href="#" className="link-footer">
-              <p>Liderança</p>
-            </a>
-            <a href="#" className="link-footer">
-              <p>Ministérios</p>
-            </a>
-          </div>
+          <SectionContato />
+          <SectionEndereco />
+          <SectionRedesSorciais />
+          <SectionSobre />
         </div>
         <div className="infos">
           <div>
@@ -110,34 +36,34 @@ function SectionFooter() {
             </div>
           </div>
           <div className="social-media">
-            <a
+            <Link
               href="mailto:ibcomag@gmail.com"
               target="__blank"
               className="link-logos"
             >
               <img src={email} alt="Logo email" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://ibcomag.page.link/instagram"
               target="__blank"
               className="link-logos"
             >
               <img src={instagram} alt="Logo instagram" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.facebook.com/ibcomag"
               target="__blank"
               className="link-logos"
             >
               <img src={facebook} alt="Logo facebook" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://ibcomag.page.link/youtube"
               target="__blank"
               className="link-logos"
             >
               <img src={youtube} alt="Logo youtube" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

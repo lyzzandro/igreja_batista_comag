@@ -1,0 +1,91 @@
+.contato {
+  margin-top: 8rem;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contato .content h6 {
+  color: var(--grey-300);
+}
+.contato .content h4 {
+  color: var(--grey-400);
+}
+
+.contato .content p a {
+  color: var(--grey-800);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+
+.contato .content p a:hover {
+  color: var(--grey-200);
+}
+
+.contato .content span {
+  font-size: 1.6rem;
+  color: var(--grey-200);
+}
+
+.contato-whatsapp,
+.contato-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.content-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.header-contatos {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.contato .section-fale-conosco,
+.contato .section-fale-conosco .container,
+.contato .content {
+  padding: 0;
+  width: 100%;
+}
+
+.contato .section-fale-conosco h2 {
+  font-size: 2.76rem;
+}
+
+.contato .header-fale-conosco {
+  text-align: left;
+}
+
+.contato .section-fale-conosco .button-fill p {
+  color: var(--white-50);
+}
+
+.contato .section-fale-conosco .container {
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .contato {
+    padding: 3.2rem 0;
+  }
+  .contato .section-fale-conosco h2 {
+    font-size: 2.3rem;
+  }
+
+  .contato .content span {
+    font-size: 1.2rem;
+  }
+
+  .contato-whatsapp,
+  .contato-email {
+    gap: 1.2rem;
+  }
+}

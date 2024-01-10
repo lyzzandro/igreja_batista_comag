@@ -14,21 +14,21 @@ function SectionFooter() {
             <p className="title-links">Contato</p>
             <a
               href="mailto:ibcomag@gmail.com"
-              target="__blank"
+              target="_blank"
               className="link-footer"
             >
               <p>ibcomag@gmail.com</p>
             </a>
             <a
-              href="https://web.whatsapp.com/send?phone=5583991940303"
-              target="__blank"
+              href="https://wa.me/5583991940303"
+              target="_blank"
               className="link-footer"
             >
               <p>+55 (83) 99194-0303</p>
             </a>
             <a
-              href="https://web.whatsapp.com/send?phone=5583991607575"
-              target="__blank"
+              href="https://wa.me/5583991607575"
+              target="_blank"
               className="link-footer"
             >
               <p>+55 (83) 99160-7575</p>

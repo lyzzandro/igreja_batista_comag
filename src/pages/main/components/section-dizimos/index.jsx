@@ -1,7 +1,6 @@
 import "./style.css";
 import dizimos from "/bg-dizimos.jpg";
 
-
 function SectionDizimos() {
   return (
     <div className="section-dizimos" id="dizimos">
@@ -15,7 +14,7 @@ function SectionDizimos() {
               nossas ações e projetos.
             </p>
           </div>
-          <a href="#" className="button-link">
+          <a href="/doe" className="button-link">
             <button className="button-outline">
               Veja todas as formas de colaborar
             </button>

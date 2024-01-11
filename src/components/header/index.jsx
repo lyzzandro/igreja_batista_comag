@@ -33,22 +33,22 @@ function Header() {
             <ItemDevocionais arrow={arrow} />
             <ItemLivros arrow={arrow} />
             <li>
-              <a href="#" className="links-header">
+              <Link to="#" className="links-header">
                 <img src={article} alt="Ícone de igreja" className="icones" />
                 ARTIGOS
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <Link to="#" className="links-header">
                 <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/doe" className="links-header">
+              <Link to="/doe" className="links-header">
                 <img src={dizimo} alt="Ícone de igreja" className="icones" />
                 DOE
-              </a>
+              </Link>
             </li>
           </ul>
           <button onClick={handleClick}>

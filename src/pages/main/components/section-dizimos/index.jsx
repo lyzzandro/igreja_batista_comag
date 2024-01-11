@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style.css";
 import dizimos from "/bg-dizimos.jpg";
 
@@ -14,11 +15,11 @@ function SectionDizimos() {
               nossas ações e projetos.
             </p>
           </div>
-          <a href="/doe" className="button-link">
+          <Link to="/doe" className="button-link">
             <button className="button-outline">
               Veja todas as formas de colaborar
             </button>
-          </a>
+          </Link>
         </div>
         <img src={dizimos} alt="Imagem dizimos e ofertas" />
       </div>

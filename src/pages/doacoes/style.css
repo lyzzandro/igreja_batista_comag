@@ -172,6 +172,9 @@
 }
 
 @media (max-width: 480px) {
+  .doacoes .container {
+    width: 100%;
+  }
   .prosalvi > div {
     flex-direction: column;
     gap: 2.4rem;

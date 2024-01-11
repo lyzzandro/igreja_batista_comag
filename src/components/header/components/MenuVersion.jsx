@@ -45,7 +45,7 @@ function MenuVersion({ isVisible }) {
           </Link>
         </li>
         <li>
-          <Link to="#">
+          <Link to="/doe">
             <img src={dizimoWhite} alt="Ícone de telefone" />
             DOE
           </Link>

@@ -1,0 +1,194 @@
+.doacoes {
+  margin-top: 8rem;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doacoes .content h6 {
+  color: var(--grey-300);
+}
+.doacoes .content h4 {
+  color: var(--grey-400);
+}
+
+.doacoes .content p a {
+  font-size: 1.6rem;
+  color: var(--grey-800);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+
+.doacoes .content p {
+  font-size: 1.6rem;
+}
+
+.doacoes .content p a:hover {
+  color: var(--grey-200);
+}
+
+.doacoes .content span {
+  font-size: 1.6rem;
+  color: var(--grey-800);
+}
+
+.formas-de-doar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.content-doacoes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4.8rem;
+}
+
+.pix,
+.deposito,
+.igreja {
+  width: fit-content;
+  max-width: 384px;
+}
+
+.pix p:first-of-type,
+.deposito p:first-of-type,
+.igreja p:first-of-type {
+  padding: 0 0 0.8rem 0;
+}
+
+.header-doacoes {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.doacoes .section-doacoes,
+.doacoes .section-doacoes .container,
+.doacoes .content {
+  padding: 0;
+  width: 100%;
+}
+
+.deposito .bold,
+.pix .bold,
+.igreja .bold {
+  color: var(--grey-400);
+}
+
+@media (max-width: 1024px) {
+  .doacoes {
+    padding: 3.2rem 0;
+  }
+
+  .doacoes .content span {
+    font-size: 1.2rem;
+  }
+
+  .formas-de-doar {
+    gap: 1.2rem;
+  }
+
+  .content-doacoes {
+    gap: 3.2rem;
+  }
+
+  .doacoes .content p a {
+    font-size: 1.2rem;
+  }
+
+  .doacoes .content p {
+    font-size: 1.2rem;
+  }
+
+  .pix p:first-of-type,
+  .deposito p:first-of-type,
+  .igreja p:first-of-type {
+    padding: 0 0 0.4rem 0;
+  }
+}
+
+.prosalvi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  padding: 4.8rem;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  background: #252840 url(../../../public/banner-prosalvi.jpg) center;
+}
+
+.prosalvi > div {
+  display: flex;
+  width: 100%;
+  gap: 4.8rem;
+}
+
+.header-prosalvi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+}
+
+.header-prosalvi img {
+  margin-bottom: 2.4rem;
+}
+
+.pix-prosalvi {
+  width: 50%;
+}
+
+.pix-prosalvi p:first-of-type {
+  margin-bottom: 0.8rem;
+}
+
+.pix-prosalvi img {
+  margin-top: 0.8rem;
+}
+
+.pix-prosalvi p {
+  color: var(--white-50);
+}
+
+.prosalvi .header-prosalvi h4 {
+  color: var(--white-50);
+}
+
+.prosalvi .pix-prosalvi span {
+  color: var(--white-50);
+}
+
+@media (max-width: 480px) {
+  .prosalvi > div {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .header-prosalvi {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .pix-prosalvi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pix-prosalvi img {
+    width: 100%;
+  }
+}

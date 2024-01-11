@@ -45,7 +45,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#" className="links-header">
+              <a href="/doe" className="links-header">
                 <img src={dizimo} alt="Ícone de igreja" className="icones" />
                 DOE
               </a>

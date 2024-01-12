@@ -5,6 +5,7 @@ import Footer from "../../components/footer";
 import FaleConosco from "../../components/section-fale-conosco";
 import Email from "../../../public/email-icon.svg";
 import WhatsApp from "../../../public/whatsapp-icon.svg";
+import { Link } from "react-router-dom";
 
 function Contato() {
   return (
@@ -21,16 +22,16 @@ function Contato() {
               </div>
               <div className="content-contato">
                 <p>
-                  <a href="https://wa.me/5583991940303" target="_blank">
+                  <Link to="https://wa.me/5583991940303" target="_blank">
                     +55 (83) 99109-0097{" "}
-                  </a>
+                  </Link>
 
                   <span>(Pr. Joselito Garrido Fernandes)</span>
                 </p>
                 <p>
-                  <a href="https://wa.me/5583991607575" target="_blank">
+                  <Link to="https://wa.me/5583991607575" target="_blank">
                     +55 (83) 99160-75757
-                  </a>
+                  </Link>
                   <span>(Pr. Lucélio Silva)</span>
                 </p>
               </div>

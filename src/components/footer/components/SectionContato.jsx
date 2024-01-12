@@ -12,14 +12,14 @@ function SectionContato() {
         <p>ibcomag@gmail.com</p>
       </Link>
       <Link
-        to="https://web.whatsapp.com/send?phone=5583991940303"
+        to="https://wa.me/5583991940303"
         target="_blank"
         className="link-footer"
       >
         <p>+55 (83) 99194-0303</p>
       </Link>
       <Link
-        to="https://web.whatsapp.com/send?phone=5583991607575"
+        to="https://wa.me/5583991607575"
         target="_blank"
         className="link-footer"
       >

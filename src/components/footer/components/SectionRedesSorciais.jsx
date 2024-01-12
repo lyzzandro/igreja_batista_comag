@@ -6,21 +6,21 @@ function SectionRedesSorciais() {
       <p className="title-links">Redes Sociais</p>
       <Link
         to="https://ibcomag.page.link/instagram"
-        target="__blank"
+        target="_blank"
         className="link-footer"
       >
         <p>Instagram</p>
       </Link>
       <Link
         to="https://ibcomag.page.link/youtube"
-        target="__blank"
+        target="_blank"
         className="link-footer"
       >
         <p>Youtube</p>
       </Link>
       <Link
         to="https://www.facebook.com/ibcomag"
-        target="__blank"
+        target="_blank"
         className="link-footer"
       >
         <p>Facebook</p>

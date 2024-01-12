@@ -71,7 +71,7 @@ function Doacoes() {
                   <p className="bold">Via PIX</p>
                   <p>Nossa chave:</p>
                   <p>
-                    CNPJ: <span className="bold">00000000000</span>
+                    CNPJ: <span className="bold">15.431.401/0001-73</span>
                   </p>
                   <img src={QrCode} alt="QrCode do prosalvi" />
                 </div>

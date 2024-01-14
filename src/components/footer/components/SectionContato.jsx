@@ -6,21 +6,21 @@ function SectionContato() {
       <p className="title-links">Contato</p>
       <Link
         to="mailto:ibcomag@gmail.com"
-        target="__blank"
+        target="_blank"
         className="link-footer"
       >
         <p>ibcomag@gmail.com</p>
       </Link>
       <Link
-        to="https://web.whatsapp.com/send?phone=5583991940303"
-        target="__blank"
+        to="https://wa.me/5583991940303"
+        target="_blank"
         className="link-footer"
       >
         <p>+55 (83) 99194-0303</p>
       </Link>
       <Link
-        to="https://web.whatsapp.com/send?phone=5583991607575"
-        target="__blank"
+        to="https://wa.me/5583991607575"
+        target="_blank"
         className="link-footer"
       >
         <p>+55 (83) 99160-7575</p>

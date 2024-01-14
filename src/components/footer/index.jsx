@@ -1,15 +1,19 @@
 import "./style.css";
 import logo from "/logo2.png";
-import email from "/Email icon.svg";
-import instagram from "/IG icon.svg";
-import facebook from "/Facebook icon.svg";
-import youtube from "/Youtube icon.svg";
+import arrow from "/arrow-up.svg";
 import { Link } from "react-router-dom";
 
 import SectionContato from "./components/SectionContato";
 import SectionEndereco from "./components/SectionEndereco";
 import SectionSobre from "./components/SectionSobre";
 import SectionRedesSorciais from "./components/SectionRedesSorciais";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 function SectionFooter() {
   return (
@@ -35,35 +39,11 @@ function SectionFooter() {
               <p className="info-site">Todos os direitos reservados</p>
             </div>
           </div>
-          <div className="social-media">
-            <Link
-              href="mailto:ibcomag@gmail.com"
-              target="__blank"
-              className="link-logos"
-            >
-              <img src={email} alt="Logo email" />
-            </Link>
-            <Link
-              href="https://ibcomag.page.link/instagram"
-              target="__blank"
-              className="link-logos"
-            >
-              <img src={instagram} alt="Logo instagram" />
-            </Link>
-            <Link
-              href="https://www.facebook.com/ibcomag"
-              target="__blank"
-              className="link-logos"
-            >
-              <img src={facebook} alt="Logo facebook" />
-            </Link>
-            <Link
-              href="https://ibcomag.page.link/youtube"
-              target="__blank"
-              className="link-logos"
-            >
-              <img src={youtube} alt="Logo youtube" />
-            </Link>
+          <div className="btn-voltar">
+            <button onClick={scrollToTop}>
+              <img src={arrow} alt="" />
+              <p className="bold">Voltar ao topo</p>
+            </button>
           </div>
         </div>
       </div>

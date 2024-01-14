@@ -4,27 +4,27 @@ function SectionEndereco() {
   return (
     <div className="col-links">
       <p className="title-links">Endereço</p>
-      <a
-        href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-        target="__blank"
+      <Link
+        to="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
+        target="_blank"
         className="link-footer"
       >
         <p>Rua Adilmar de Paiva Gadelha, 01</p>
-      </a>
-      <a
-        href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-        target="__blank"
+      </Link>
+      <Link
+        to="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
+        target="_blank"
         className="link-footer"
       >
         <p>Bairro André Gadelha</p>
-      </a>
-      <a
-        href="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
-        target="__blank"
+      </Link>
+      <Link
+        to="https://maps.app.goo.gl/b82L8EK2iUGraoDg7"
+        target="_blank"
         className="link-footer"
       >
         <p>Sousa, PB</p>
-      </a>
+      </Link>
     </div>
   );
 }

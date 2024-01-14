@@ -6,6 +6,7 @@ import Contato from "./pages/contato";
 import Localizacao from "./pages/localizacao";
 import Doacoes from "./pages/doacoes";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Devocional from "./pages/devocional";
 
 const routerPublic = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const routerPublic = createBrowserRouter([
     path: "/doe",
     element: <Doacoes />,
   },
+  {
+    path: "/devocional/:id",
+    element: <Devocional />
+  }
 ]);
 
 const Routers = () => {

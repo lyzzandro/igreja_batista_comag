@@ -1,11 +1,8 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import "./style.css"
-
 import { Render } from "@9gustin/react-notion-render";
 import { useEffect, useState } from "react";
 import { getDevotional } from "../../services/getDataInApi";
 import { useParams } from "react-router-dom";
+import "./style.css";
 
 function Devocional() {
   const [devotional, setDevotional] = useState(null);
@@ -21,13 +18,9 @@ function Devocional() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <div className="devocional">
-        <Render blocks={devotional?.content} />
-      </div>
-      <Footer />
-    </>
+    <div className="devocional">
+      <Render blocks={devotional?.content} />
+    </div>
   );
 }
 

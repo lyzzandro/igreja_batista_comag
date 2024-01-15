@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import book from "/book.svg";
+import { useEffect, useState } from "react";
+import { getAllBooks } from "../../../services/crud/books";
 
 function ItemLivros({ arrow }) {
+  const [books, setBooks] = useState([]);
+  useEffect(() => {
+    async function main() {
+      const response = await getAllBooks();
+      setBooks(response);
+    }
+    main();
+  });
   return (
     <li>
       <a href="#" className="links-header">
@@ -14,22 +24,13 @@ function ItemLivros({ arrow }) {
         />
       </a>
       <ul className="dropdown">
-        <li>
-          <Link to="https://loja.uiclap.com/titulo/ua10433/" target="_blank">
-            Angelologia (Pr. Joselito Garrido Fernandes)
-          </Link>
-        </li>
-        <li>
-          <Link to="https://loja.uiclap.com/titulo/ua12715/" target="_blank">
-            O Caminho Da Oração (Pr. Joselito Garrido Fernandes)
-          </Link>
-        </li>
-        <li>
-          <Link to="https://loja.uiclap.com/titulo/ua47600/" target="_blank">
-            Fé, perseverança e firmeza com Cristo (Pr. Joselito Garrido
-            Fernandes)
-          </Link>
-        </li>
+        {books.map((data, index) => (
+          <li key={`book-${index}`}>
+            <Link to={data.link} target="_blank">
+              {data.name} ({data.auth})
+            </Link>
+          </li>
+        ))}
       </ul>
     </li>
   );

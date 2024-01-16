@@ -11,7 +11,7 @@ function ItemLivros({ arrow }) {
       setBooks(response);
     }
     main();
-  });
+  }, []);
   return (
     <li>
       <a href="#" className="links-header">

@@ -1,6 +1,6 @@
 import { Render } from "@9gustin/react-notion-render";
 import { useEffect, useState } from "react";
-import { getDevotional } from "../../services/getDataInApi";
+import { getDevotional } from "../../services/crud/devotional";
 import { useParams } from "react-router-dom";
 import "./style.css";
 

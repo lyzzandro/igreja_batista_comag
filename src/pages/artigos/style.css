@@ -1,0 +1,45 @@
+.main-artigos {
+  padding: 10rem 8rem 6rem;
+}
+
+.main-artigos > h4 {
+  margin-bottom: 4.8rem;
+  color: var(--grey-400);
+}
+
+.section-artigos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.artigo {
+  width: clamp(25rem, 100%, 35rem);
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  transition: translate .25s ease-in-out;
+}
+
+.artigo:hover {
+  translate: 0 -1rem;
+}
+
+.artigo img {
+  height: 18rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.artigo * {
+  font-size: 1.6rem;
+  color: var(--grey-800);
+}
+
+.artigo h6 {
+  color: var(--grey-400);
+}
+

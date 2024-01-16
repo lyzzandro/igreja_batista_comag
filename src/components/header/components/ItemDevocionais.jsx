@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import progamation_icon from "/watch_later.svg";
 import { useEffect, useState } from "react";
-import { getAllDevotionals } from "../../../services/getDataInApi";
+import { getAllDevotionals } from "../../../services/crud/devotional";
 
 function ItemDevocionais({ arrow }) {
   const [devotionals, setDevotionals] = useState([]);

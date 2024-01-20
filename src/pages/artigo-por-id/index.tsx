@@ -1,33 +1,33 @@
 import { Render } from "@9gustin/react-notion-render";
 import "@9gustin/react-notion-render/dist/index.css";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getDevotional } from "../../services/crud/devotional";
-import Video from "./components/Video";
+import React, { useEffect, useState } from "react";
+import { getArticle } from "../../services/crud/article";
+import { formatDate } from "../../services/date";
 
-function Devocional() {
+function Artigo() {
   const [devotional, setDevotional] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
     async function main() {
-      const response = await getDevotional({ id });
+      const response = await getArticle({ id });
       setDevotional(response);
     }
     main();
   }, [id]);
 
   return (
-    <div className="main">
+    <div className="main artigo-id">
       <div className="container">
         <div className="content">
-          <div className="title-section">
+          <span className="title-section">
             <h4>{devotional?.name}</h4>
             <p>
-              Por <span className="bold">{devotional?.auth}</span>
+              Por <strong>{devotional?.auth} - </strong>
+              em {formatDate(devotional?.date)}
             </p>
-            {devotional?.vídeo && <Video url={devotional?.vídeo} />}
-          </div>
+          </span>
           <Render useStyles blocks={devotional?.content} />
         </div>
       </div>
@@ -35,4 +35,4 @@ function Devocional() {
   );
 }
 
-export default Devocional;
+export default Artigo;

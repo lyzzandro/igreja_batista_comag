@@ -7,6 +7,7 @@ import Localizacao from "./pages/localizacao";
 import Doacoes from "./pages/doacoes";
 import Devocional from "./pages/devocional";
 import Artigos from "./pages/artigos";
+import Artigo from "./pages/artigo-por-id";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Footer from "./components/footer";
@@ -61,6 +62,10 @@ const routerPublic = createBrowserRouter([
       {
         path: "/artigos/",
         element: <Artigos />
+      },
+      {
+        path: "/artigos/:id",
+        element: <Artigo />
       }
     ],
   },

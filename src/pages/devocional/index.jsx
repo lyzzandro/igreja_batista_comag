@@ -1,8 +1,9 @@
 import { Render } from "@9gustin/react-notion-render";
+import "@9gustin/react-notion-render/dist/index.css";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getDevotional } from "../../services/crud/devotional";
-import { useParams } from "react-router-dom";
-import Video from "./components/Video"
+import Video from "./components/Video";
 
 function Devocional() {
   const [devotional, setDevotional] = useState(null);
@@ -21,9 +22,11 @@ function Devocional() {
       <div className="container">
         <div className="content">
           <h4>{devotional?.name}</h4>
-          <p>Por <span className="bold">{devotional?.auth}</span></p>
+          <p>
+            Por <span className="bold">{devotional?.auth}</span>
+          </p>
           {devotional?.vídeo && <Video url={devotional?.vídeo} />}
-          <Render blocks={devotional?.content} />
+          <Render useStyles blocks={devotional?.content} />
         </div>
       </div>
     </div>

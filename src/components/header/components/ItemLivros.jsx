@@ -14,7 +14,7 @@ function ItemLivros({ arrow }) {
   }, []);
   return (
     <li>
-      <a href="#" className="links-header">
+      <a href="/livros" className="links-header">
         <img src={book} alt="Ícone de livro" className="icones" />
         LIVROS
         <img

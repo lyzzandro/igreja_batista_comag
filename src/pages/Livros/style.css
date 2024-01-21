@@ -1,0 +1,52 @@
+.livros .container {
+  align-items: normal;
+  margin: auto;
+}
+
+.livros .content h4 {
+  margin-bottom: 4.8rem;
+  color: var(--grey-400);
+}
+
+.livros .content .section-livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, max-content));
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.livros .content .livro {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--blue-50);
+}
+
+.livros .content .livro div {
+  width: 33.3rem;
+  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: translate 0.25s ease-in-out;
+}
+
+.livros .content .livro img {
+  height: 30.2rem;
+  border-radius: 0.8rem;
+}
+
+.livros .content .livro * {
+  color: var(--grey-400);
+}
+
+.livros .content .livro .button {
+  border: 2px solid var(--blue-400);
+  border-radius: 0.8rem;
+  width: max-content;
+  font-weight: bold;
+  color: var(--blue-400);
+  padding: 0.8rem 2rem;
+}

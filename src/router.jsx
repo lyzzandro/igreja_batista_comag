@@ -8,7 +8,8 @@ import Doacoes from "./pages/doacoes";
 import Devocional from "./pages/devocional";
 import Artigos from "./pages/artigos";
 import Artigo from "./pages/artigo-por-id";
-import Livros from "./pages/Livros";
+import Livros from "./pages/livros";
+import Musicas from "./pages/musicas";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Footer from "./components/footer";
@@ -71,6 +72,10 @@ const routerPublic = createBrowserRouter([
       {
         path: "/livros",
         element: <Livros />,
+      },
+      {
+        path: "/musicas",
+        element: <Musicas />,
       },
     ],
   },

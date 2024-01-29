@@ -39,7 +39,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="#" className="links-header">
+              <Link to="/musicas" className="links-header">
                 <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
               </Link>

@@ -2,8 +2,8 @@ import { Render } from "@9gustin/react-notion-render";
 import "@9gustin/react-notion-render/dist/index.css";
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { getArticle } from "../../services/crud/article";
-import { formatDate } from "../../services/date";
+import { getArticle } from "../../../services/crud/article";
+import { formatDate } from "../../../services/date";
 
 function Artigo() {
   const [devotional, setDevotional] = useState(null);

@@ -7,7 +7,7 @@ import Localizacao from "./pages/localizacao";
 import Doacoes from "./pages/doacoes";
 import Devocional from "./pages/devocional";
 import Artigos from "./pages/artigos";
-import Artigo from "./pages/artigo-por-id";
+import Artigo from "./pages/artigos/pages/artigo-por-id";
 import Livros from "./pages/livros";
 import Musicas from "./pages/musicas";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getAllBooks } from "../../services/crud/books";
 import SectionLivros from "./components/SectionLivros";
 import "./style.css";
@@ -20,8 +20,8 @@ function Livros() {
         <div className="content">
           <h4 className="bold title">Livros</h4>
           <div className="section-livros">
-            {books.map((data) => (
-              <SectionLivros {...data} />
+            {books.map((data, key) => (
+              <SectionLivros key={`book-${key}`} {...data} />
             ))}
           </div>
         </div>

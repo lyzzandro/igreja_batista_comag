@@ -1,38 +1,33 @@
-import { Render } from "@9gustin/react-notion-render";
-import "@9gustin/react-notion-render/dist/index.css";
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getDevotional } from "../../services/crud/devotional";
-import Video from "./components/Video";
+import SectionDevocional from "./components/SectionDevocional";
+import { getAllDevotionals } from "../../services/crud/devotional";
+import "./style.css";
 
-function Devocional() {
-  const [devotional, setDevotional] = useState(null);
-  const { id } = useParams();
+function Devocionais() {
+  const [devocional, setDevocional] = useState([]);
 
   useEffect(() => {
     async function main() {
-      const response = await getDevotional({ id });
-      setDevotional(response);
+      const response = await getAllDevotionals();
+      setDevocional(response);
     }
     main();
-  }, [id]);
+  }, []);
 
   return (
-    <div className="main">
+    <div className="main devocionais">
       <div className="container">
         <div className="content">
-          <div className="title-section">
-            <h4>{devotional?.name}</h4>
-            <p>
-              Por <span className="bold">{devotional?.auth}</span>
-            </p>
-            {devotional?.vídeo && <Video url={devotional?.vídeo} />}
+          <h4 className="bold title">Devocionais</h4>
+          <div className="section-devocional">
+            {devocional.map((data, index) => (
+              <SectionDevocional key={`devotional-${index}`} {...data} />
+            ))}
           </div>
-          <Render useStyles blocks={devotional?.content} />
         </div>
       </div>
     </div>
   );
 }
 
-export default Devocional;
+export default Devocionais;

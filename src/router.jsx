@@ -5,7 +5,8 @@ import HistoriaDaIgreja from "./pages/historia-da-igreja";
 import Contato from "./pages/contato";
 import Localizacao from "./pages/localizacao";
 import Doacoes from "./pages/doacoes";
-import Devocional from "./pages/devocional";
+import Devocionais from "./pages/devocional";
+import Devocional from "./pages/devocional/pages/devocional-por-id";
 import Artigos from "./pages/artigos";
 import Artigo from "./pages/artigos/pages/artigo-por-id";
 import Livros from "./pages/livros";
@@ -58,7 +59,11 @@ const routerPublic = createBrowserRouter([
         element: <Doacoes />,
       },
       {
-        path: "/devocional/:id",
+        path: "/devocionais/",
+        element: <Devocionais />,
+      },
+      {
+        path: "/devocionais/:id",
         element: <Devocional />,
       },
       {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function SectionLivros({ id, name, auth, synopsis, image }) {
+function SectionLivros({ link, name, auth, synopsis, image }) {
   return (
     <div className="livro">
       <img src={image} alt="Imagem para o artigo" />
@@ -10,7 +10,7 @@ function SectionLivros({ id, name, auth, synopsis, image }) {
       </span>
       <div>
         <p>{synopsis}</p>
-        <Link to={`/livros/${id}`} className="button">
+        <Link to={link} className="button">
           LER SINOPSE COMPLETA
         </Link>
       </div>

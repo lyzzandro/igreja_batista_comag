@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionArtigo from "./components/SectionArtigo";
 import { getAllArticles } from "../../services/crud/article";
+import AvisoPaginaVazia from "../../components/aviso-pagina-vazia";
 import "./style.css";
 
 function Artigos() {
@@ -15,14 +16,18 @@ function Artigos() {
   }, []);
 
   return (
-    <div className="artigos">
+    <div className="main artigos">
       <div className="container">
         <div className="content">
           <h4 className="bold title">Artigos</h4>
           <div className="section-artigos">
-            {articles.map((data) => (
-              <SectionArtigo {...data} />
-            ))}
+            {articles.length > 0 ? (
+              articles.map((data, index) => (
+                <SectionArtigo key={`articles-${index}`} {...data} />
+              ))
+            ) : (
+              <AvisoPaginaVazia text="Nenhum artigo encontrado" />
+            )}
           </div>
         </div>
       </div>

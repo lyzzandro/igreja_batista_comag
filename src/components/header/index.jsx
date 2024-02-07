@@ -33,13 +33,13 @@ function Header() {
             <ItemDevocionais arrow={arrow} />
             <ItemLivros arrow={arrow} />
             <li>
-              <Link to="#" className="links-header">
+              <Link to="/artigos" className="links-header">
                 <img src={article} alt="Ícone de igreja" className="icones" />
                 ARTIGOS
               </Link>
             </li>
             <li>
-              <Link to="#" className="links-header">
+              <Link to="/musicas" className="links-header">
                 <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
               </Link>

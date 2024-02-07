@@ -47,7 +47,6 @@ function Contato() {
               </p>
             </div>
           </div>
-          prettier
         </div>
         <FaleConosco />
       </div>

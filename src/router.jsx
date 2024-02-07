@@ -5,6 +5,11 @@ import HistoriaDaIgreja from "./pages/historia-da-igreja";
 import Contato from "./pages/contato";
 import Localizacao from "./pages/localizacao";
 import Doacoes from "./pages/doacoes";
+import Devocional from "./pages/devocional";
+import Artigos from "./pages/artigos";
+import Artigo from "./pages/artigos/pages/artigo-por-id";
+import Livros from "./pages/livros";
+import Musicas from "./pages/musicas";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Footer from "./components/footer";
@@ -51,6 +56,26 @@ const routerPublic = createBrowserRouter([
       {
         path: "/doe",
         element: <Doacoes />,
+      },
+      {
+        path: "/devocional/:id",
+        element: <Devocional />,
+      },
+      {
+        path: "/artigos/",
+        element: <Artigos />,
+      },
+      {
+        path: "/artigos/:id",
+        element: <Artigo />,
+      },
+      {
+        path: "/livros",
+        element: <Livros />,
+      },
+      {
+        path: "/musicas",
+        element: <Musicas />,
       },
     ],
   },

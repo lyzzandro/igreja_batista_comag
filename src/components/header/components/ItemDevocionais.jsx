@@ -16,7 +16,7 @@ function ItemDevocionais({ arrow }) {
 
   return (
     <li>
-      <a href="#" className="links-header">
+      <Link to="#" className="links-header">
         <img
           src={progamation_icon}
           alt="Ícone de relógio"
@@ -28,7 +28,7 @@ function ItemDevocionais({ arrow }) {
           alt="Ícone de seta pra baixo"
           className="icones arrow"
         />
-      </a>
+      </Link>
       <ul className="dropdown">
         {devotionals.map((data, key) => (
           <li key={`devotional-${key}`}>

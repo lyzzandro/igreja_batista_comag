@@ -14,7 +14,7 @@ function ItemLivros({ arrow }) {
   }, []);
   return (
     <li>
-      <a href="/livros" className="links-header">
+      <Link to="/livros" className="links-header">
         <img src={book} alt="Ícone de livro" className="icones" />
         LIVROS
         <img
@@ -22,7 +22,7 @@ function ItemLivros({ arrow }) {
           alt="Ícone de seta pra baixo"
           className="icones arrow"
         />
-      </a>
+      </Link>
       <ul className="dropdown">
         {books.map((data, index) => (
           <li key={`book-${index}`}>

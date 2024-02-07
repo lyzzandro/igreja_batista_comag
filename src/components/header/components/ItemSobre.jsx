@@ -4,7 +4,7 @@ import church from "/church.svg";
 function ItemSobre({ arrow }) {
   return (
     <li>
-      <a href="#" className="links-header">
+      <Link to="#" className="links-header">
         <img src={church} alt="Ícone de igreja" className="icones" />
         SOBRE
         <img
@@ -12,7 +12,7 @@ function ItemSobre({ arrow }) {
           alt="Ícone de seta pra baixo"
           className="icones arrow"
         />
-      </a>
+      </Link>
       <ul className="dropdown">
         <li>
           <Link to="/missao_e_proposito">Nossa missão e propósito</Link>

@@ -1,0 +1,22 @@
+.grid .container {
+  align-items: normal;
+  margin: auto;
+}
+
+.grid .content h4 {
+  margin-bottom: 4.8rem;
+  color: var(--grey-400);
+}
+
+.grid .content .section-grid-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 35rem);
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+@media (max-width: 599px) {
+  .grid .content h4 {
+    margin-bottom: 3.2rem;
+  }
+}

@@ -1,0 +1,27 @@
+.card {
+  width: clamp(25rem, 100%, 35rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: translate 0.25s ease-in-out;
+}
+
+.card:hover {
+  translate: 0 -1rem;
+}
+
+.card img {
+  height: 18rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card * {
+  font-size: 1.6rem;
+  color: var(--grey-800);
+}
+
+.card h6 {
+  color: var(--grey-400);
+}

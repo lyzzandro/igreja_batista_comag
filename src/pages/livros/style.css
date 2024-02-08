@@ -1,14 +1,4 @@
-.livros .container {
-  align-items: normal;
-  margin: auto;
-}
-
-.livros .content h4 {
-  margin-bottom: 4.8rem;
-  color: var(--grey-400);
-}
-
-.livros .content .section-livros {
+.livros .content .section-grid-item {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
   justify-content: space-between;
@@ -56,7 +46,7 @@
 }
 
 @media (max-width: 599px) {
-  .livros .content .section-livros {
+  .livros .content .section-grid-item {
     display: grid;
     grid-template-columns: 1fr;
   }

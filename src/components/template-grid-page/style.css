@@ -10,7 +10,7 @@
 
 .grid .content .section-grid-item {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 35rem);
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 38.4rem));
   justify-content: space-between;
   gap: 3.2rem;
 }

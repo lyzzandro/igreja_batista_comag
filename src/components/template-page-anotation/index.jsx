@@ -2,16 +2,13 @@ import { Render } from "@9gustin/react-notion-render";
 import "@9gustin/react-notion-render/dist/index.css";
 import { useState } from "react";
 import Loading from "../loading";
-import api from "../../api";
+import { handleResponse } from "../../api";
 import { formatDate } from "../../services/date";
 
 function TemplateAnotation({ data, Video }) {
   const [loading, setLoading] = useState(true);
 
-  api.interceptors.response.use((response) => {
-    setLoading(false);
-    return response;
-  }, null);
+  handleResponse(() => setLoading(false));
 
   function ComponentRender() {
     return (

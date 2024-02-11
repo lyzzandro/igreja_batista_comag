@@ -11,12 +11,24 @@ import Artigos from "./pages/artigos";
 import Artigo from "./pages/artigos/pages/artigo-por-id";
 import Livros from "./pages/livros";
 import Musicas from "./pages/musicas";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+  useLocation,
+} from "react-router-dom";
 
 import Footer from "./components/footer";
 import Header from "./components/header";
+import { useEffect } from "react";
 
 const TemplatePage = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Header />

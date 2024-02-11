@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useResource(callbackAPI) {
+function useResource(callbackAPI, monitoring = []) {
   const [resource, setResource] = useState([]);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ function useResource(callbackAPI) {
       setResource(response);
     }
     main();
-  }, []);
+  }, monitoring);
 
   return resource;
 }

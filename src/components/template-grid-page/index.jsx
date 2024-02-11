@@ -1,8 +1,7 @@
 import { useState } from "react";
-
 import AvisoPaginaVazia from "../aviso-pagina-vazia";
-import loadingAnimation from "/loading.gif";
 import "./style.css";
+import Loading from "../loading";
 
 import api from "../../api";
 
@@ -17,7 +16,11 @@ function TemplateGrid({ SectionGrid, listData, title, singleName }) {
   function ComponentRender() {
     return listData.length > 0 ? (
       listData.map((data, index) => (
-        <SectionGrid key={`grid-${index}`} {...data} />
+        <SectionGrid
+        path={title.toLowerCase()}
+          key={`grid-${index}`}
+          {...data}
+        />
       ))
     ) : (
       <AvisoPaginaVazia text={`Nenhum ${singleName} encontrado`} />
@@ -30,9 +33,7 @@ function TemplateGrid({ SectionGrid, listData, title, singleName }) {
         <div className="content">
           <h4 className="bold title">{title}</h4>
           {loading ? (
-            <div className="item-center">
-              <img src={loadingAnimation} alt="loading..." />
-            </div>
+            <Loading />
           ) : (
             <div className="section-grid-item">
               <ComponentRender />

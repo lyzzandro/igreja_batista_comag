@@ -14,6 +14,16 @@ html {
   font-weight: 400;
 }
 
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Links INICIO*/
 
 a {
@@ -147,15 +157,25 @@ li {
   align-items: center;
   max-width: 1216px;
   width: 100%;
+  height: 100%;
   gap: 48px;
 }
 
 .main {
+  flex-grow: 1;
   margin-top: 8rem;
   padding: 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.items-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Buttons styles */

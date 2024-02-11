@@ -2,7 +2,7 @@ import { Render } from "@9gustin/react-notion-render";
 import "@9gustin/react-notion-render/dist/index.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getDevotional } from "../../../services/crud/devotional";
+import { requestDevotionals } from "../../../services/requests";
 import Video from "../components/Video";
 
 function Devocional() {
@@ -11,7 +11,7 @@ function Devocional() {
 
   useEffect(() => {
     async function main() {
-      const response = await getDevotional({ id });
+      const response = await requestDevotionals.getById({ id });
       setDevotional(response);
     }
     main();

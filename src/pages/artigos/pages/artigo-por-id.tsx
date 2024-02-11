@@ -2,7 +2,7 @@ import { Render } from "@9gustin/react-notion-render";
 import "@9gustin/react-notion-render/dist/index.css";
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { getArticle } from "../../../services/crud/article";
+import { requestArticles } from "../../../services/requests";
 import { formatDate } from "../../../services/date";
 
 function Artigo() {
@@ -11,7 +11,7 @@ function Artigo() {
 
   useEffect(() => {
     async function main() {
-      const response = await getArticle({ id });
+      const response = await requestArticles.getById({ id });
       setDevotional(response);
     }
     main();

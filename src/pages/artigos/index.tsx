@@ -1,11 +1,13 @@
 import React from "react";
-import useResources from "../../components/useResource";
+
 import TemplateGrid from "../../components/template-grid-page";
+import useResources from "../../components/useResource";
 import Card from "../../components/card";
-import { getAllArticles } from "../../services/crud/article";
+
+import { requestArticles } from "../../services/requests";
 
 function Artigos() {
-  const articles = useResources(getAllArticles);
+  const articles = useResources(requestArticles.getAll);
 
   return (
     <TemplateGrid

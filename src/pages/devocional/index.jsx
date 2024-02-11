@@ -1,38 +1,19 @@
-import { Render } from "@9gustin/react-notion-render";
-import "@9gustin/react-notion-render/dist/index.css";
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getDevotional } from "../../services/crud/devotional";
-import Video from "./components/Video";
+import { requestDevotionals } from "../../services/requests";
+import TemplateGrid from "../../components/template-grid-page";
+import useResources from "../../components/useResource";
+import Card from "../../components/card";
 
-function Devocional() {
-  const [devotional, setDevotional] = useState(null);
-  const { id } = useParams();
-
-  useEffect(() => {
-    async function main() {
-      const response = await getDevotional({ id });
-      setDevotional(response);
-    }
-    main();
-  }, [id]);
+function Devocionais() {
+  const devocional = useResources(requestDevotionals.getAll);
 
   return (
-    <div className="main">
-      <div className="container">
-        <div className="content">
-          <div className="title-section">
-            <h4>{devotional?.name}</h4>
-            <p>
-              Por <span className="bold">{devotional?.auth}</span>
-            </p>
-            {devotional?.vídeo && <Video url={devotional?.vídeo} />}
-          </div>
-          <Render useStyles blocks={devotional?.content} />
-        </div>
-      </div>
-    </div>
+    <TemplateGrid
+      title="Devocionais"
+      singleName="devocional"
+      listData={devocional}
+      SectionGrid={Card}
+    />
   );
 }
 
-export default Devocional;
+export default Devocionais;

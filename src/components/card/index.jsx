@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { formatDate } from "../../../services/date";
+import { formatDate } from "../../services/date";
+import "./style.css"
 
-function SectionArtigo({ id, name, image, auth, date }) {
+function Card({ id, name, image, auth, date, path }) {
   return (
-    <Link to={`/artigos/${id}`} className="artigo">
+    <Link to={`/${path}/${id}`} className="card">
       <img src={image} alt="Imagem para o artigo" />
       <span>
         <h6 className="bold title">{name}</h6>
@@ -16,4 +17,4 @@ function SectionArtigo({ id, name, image, auth, date }) {
   );
 }
 
-export default SectionArtigo;
+export default Card;

@@ -40,7 +40,7 @@ function MenuVersion({ isVisible }) {
           <ButtonExpandItemSobre />
         </ItemSobre>
         <li>
-          <Link to="#">
+          <Link to="/devocionais">
             <img src={programacaoWhite} alt="Ícone de relógio" />
             DEVOCIONAIS
           </Link>

@@ -1,32 +1,21 @@
-import React, { useEffect, useState } from "react";
-import SectionArtigo from "./components/SectionArtigo";
-import { getAllArticles } from "../../services/crud/article";
-import "./style.css";
+import React from "react";
+
+import TemplateGrid from "../../components/template-grid-page";
+import useResources from "../../components/useResource";
+import Card from "../../components/card";
+
+import { requestArticles } from "../../services/requests";
 
 function Artigos() {
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    async function main() {
-      const response = await getAllArticles();
-      setArticles(response);
-    }
-    main();
-  }, []);
+  const articles = useResources(requestArticles.getAll);
 
   return (
-    <div className="artigos">
-      <div className="container">
-        <div className="content">
-          <h4 className="bold title">Artigos</h4>
-          <div className="section-artigos">
-            {articles.map((data) => (
-              <SectionArtigo {...data} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    <TemplateGrid
+      SectionGrid={Card}
+      listData={articles}
+      singleName="artigo"
+      title="Artigos"
+    />
   );
 }
 

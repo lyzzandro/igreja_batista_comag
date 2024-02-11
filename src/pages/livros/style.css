@@ -8,6 +8,7 @@
 .livros .content .livro {
   width: 100%;
   display: grid;
+  background: var(--blue-50);
   grid-template: max-content 1fr / max-content 1fr;
   gap: 1.2rem 1.6rem;
   padding: 1.6rem;

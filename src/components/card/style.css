@@ -1,5 +1,8 @@
 .card {
   width: clamp(25rem, 100%, 35rem);
+  background: var(--blue-50);
+  padding: 1.6rem;
+  border-radius: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;

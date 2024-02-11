@@ -5,6 +5,7 @@
   padding: 1.6rem;
   border-radius: 2.4rem;
   flex-direction: column;
+  background: var(--blue-50);
   border: 1px solid var(--blue-50);
   transition: translate 0.25s ease-in-out;
 }

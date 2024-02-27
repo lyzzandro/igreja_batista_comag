@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "cypress": "^13.6.6",
+    "@9gustin/react-notion-render": "^3.11.3",
+    "@notionhq/client": "^2.2.14",
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1"

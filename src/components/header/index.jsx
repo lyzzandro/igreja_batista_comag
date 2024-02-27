@@ -3,13 +3,12 @@ import logo from "/logo.png";
 
 import dizimo from "/favorite_border.svg";
 import arrow from "/keyboard_arrow_down.svg";
+import progamation_icon from "/watch_later.svg";
+import book from "/book.svg";
 import article from "/article.svg";
 import music from "/music_note.svg";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-import ItemDevocionais from "./components/ItemDevocionais";
-import ItemLivros from "./components/ItemLivros";
 import ItemSobre from "./components/ItemSobre";
 import MenuVersion from "./components/MenuVersion";
 
@@ -30,16 +29,30 @@ function Header() {
 
           <ul>
             <ItemSobre arrow={arrow} />
-            <ItemDevocionais arrow={arrow} />
-            <ItemLivros arrow={arrow} />
             <li>
-              <Link to="#" className="links-header">
+              <Link to="/devocionais" className="links-header">
+                <img
+                  src={progamation_icon}
+                  alt="Ícone de relógio"
+                  className="icones "
+                />
+                DEVOCIONAIS
+              </Link>
+            </li>
+            <li>
+              <Link to="/livros" className="links-header">
+                <img src={book} alt="Ícone de livro" className="icones" />
+                LIVROS
+              </Link>
+            </li>
+            <li>
+              <Link to="/artigos" className="links-header">
                 <img src={article} alt="Ícone de igreja" className="icones" />
                 ARTIGOS
               </Link>
             </li>
             <li>
-              <Link to="#" className="links-header">
+              <Link to="/musicas" className="links-header">
                 <img src={music} alt="Ícone de igreja" className="icones" />
                 MÚSICAS
               </Link>

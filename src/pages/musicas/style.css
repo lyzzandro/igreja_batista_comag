@@ -1,0 +1,44 @@
+.musicas .content .musica {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  flex-direction: column;
+  background: var(--blue-50);
+  border: 1px solid var(--blue-50);
+  transition: translate 0.25s ease-in-out;
+}
+
+.musicas .content .musica audio {
+  border-radius: 20rem;
+  height: 5.2rem;
+  width: 100%;
+}
+
+.musicas .content .musica .div-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.musicas .content .musica a {
+  background: var(--blue-400);
+  color: var(--white-50);
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.47rem 1.2rem;
+  border-radius: 10rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  transition: background .15s ease-in;
+}
+
+.musicas .content .musica a:hover {
+  background: var(--blue-300);
+}

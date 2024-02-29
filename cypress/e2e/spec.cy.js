@@ -1,31 +1,35 @@
-describe('testando rotas', () => {
-  it('devocionais', () => {
-    cy.visit('https://www.ibcomag.com.br')
-    cy.get('header > button').click()
-    cy.get('.menu-responsive > :nth-child(2) > a').click()
-  })
-  
-  it('livros', () => {
-    cy.visit('https://www.ibcomag.com.br')
-    cy.get('header > button').click()
-    cy.get('.menu-responsive > :nth-child(3) > a').click()
-  })
+describe("testando rotas", () => {
+  beforeEach(() => {
+    cy.visit("/");
+  });
 
-  it('artigos', () => {
-    cy.visit('https://www.ibcomag.com.br')
-    cy.get('header > button').click()
-    cy.get('.menu-responsive > :nth-child(4) > a').click()
-  })
+  const list = [
+    { name: "devocionais", router: "devotionals" },
+    { name: "livros", router: "books" },
+    { name: "artigos", router: "articles" },
+    { name: "musicas", router: "musics" },
+  ];
 
-  it('musicas', () => {
-    cy.visit('https://www.ibcomag.com.br')
-    cy.get('header > button').click()
-    cy.get('.menu-responsive > :nth-child(5) > a').click()
-  })
+  list.forEach((obj, index) => {
+    it(obj.name, () => {
+      cy.intercept({
+        method: "GET",
+        url: `/api/v1/${obj.router}*`,
+        hostname: "backend-ibcomag.up.railway.app",
+      }).as("getData");
 
-  it('doe', () => {
-    cy.visit('https://www.ibcomag.com.br')
-    cy.get('header > button').click()
-    cy.get('.menu-responsive > :nth-child(6) > a').click()
-  })
-})
+      cy.get(`li:nth-child(${index + 2}) .links-header`).click();
+      cy.wait("@getData").its("response.statusCode").should("eq", 200);
+      cy.url().should("include", obj.name);
+
+      cy.get(".section-grid-item > *").each((element) => {
+        cy.wrap(element).should("be.visible");
+      });
+    });
+  });
+
+  it("doe", () => {
+    cy.get(`li:nth-child(6) .links-header`).click();
+    cy.url().should("include", "/doe");
+  });
+});
